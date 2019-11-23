@@ -25,19 +25,19 @@ export class WaxService {
   }
 
   getWaxs() {
-    return this.http.get<Wax>(this.ServerUrl + 'api/waxs').pipe(
+    return this.http.get<Wax>(this.ServerUrl + 'api/specialts').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedWaxs() {
-    return this.http.get<Wax>(this.ServerUrl + 'api/featured_waxs').pipe(
+    return this.http.get<Wax>(this.ServerUrl + 'api/featured_specialts').pipe(
       catchError(this.handleError)
     );
   }
 
   getWax(id: number) {
-    return this.http.get<Wax>(this.ServerUrl + 'api/wax/' + id)
+    return this.http.get<Wax>(this.ServerUrl + 'api/specialt/' + id)
     .pipe(
       catchError(this.handleError)
     );

@@ -1,23 +1,41 @@
-<app-waxinfo></app-waxinfo>
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5 ">
+            <h2> Wax</h2>
+            <div class="clear"></div>
+            <p>Many people are afraid of the pain that is associated with making a wax. The truth of the matter is that the more a specific area is waxed, the less painful it will be. At first, the pain will be shocking, but if you keep receiving wax from
+                time to time, you will get used to it. Hair removal lasts longer than shaving because it pulls hair directly from its roots. When you wax, you do not run the risk of cuts or scars like when you shave. You may have rashes after shaving,
+                especially if you have sensitive skin. The hair removal will not leave you any rash. Hair removal does not consume much time. It is fast and convenient. We guarantee the use of the best product in the skin care market to ensure the best
+                results in the treatment you are choosing.
+                <br><br> The skin care specialist in our place can help you remove all or part of your hair in areas of your body that you would not want to have there. Call today to make an appointment with us. You will feel beautiful and soft as silk.
+            </p>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/CATEGORiA-WAX.jpg" alt="Vali Skincare & Makeup wax">
+        </div>
+    </div>
+</section>
 
 <section>
     <div class=" barraseccion-sola"></div>
 </section>
-<section class="serviceslist ">
+
+<section class="serviceslist">
     <div class="container">
         <div *ngFor="let wax of waxs; let i=index">
             <a data-toggle="modal" [attr.data-target]="'#' + wax.popup">
                 <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wax.image + ')'}">
                     <div class="conten">
-                        <h3>{{ wax.title }}</h3>
-                        <button class="btn">{{ 'More'  }}</button>
+                        <h3>{{wax.title}}</h3>
+                        <button class="btn">More</button>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="service-error" *ngIf="error">
-            {{error}}
-        </div>
+    </div>
+    <div class="service-error" *ngIf="error">
+        {{error}}
     </div>
 </section>
 

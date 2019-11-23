@@ -26,7 +26,7 @@ export class ResultadosComponent implements OnInit {
   error: string;
   buscar:string = "";
 
-  product={};
+  product;
 
 
   type: string;

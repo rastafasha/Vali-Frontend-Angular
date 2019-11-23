@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { WaxService } from '../../../service/wax.service';
 import { Wax } from '../../../models/wax';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-waxmodal',
@@ -15,16 +13,9 @@ export class WaxmodalComponent implements OnInit {
   error: string;
   editorContent: string;
 
-  public activeLang = 'en';
 
-  public flag : boolean = false;
-
-  constructor(private waxService: WaxService, 
-    private activateRouter: ActivatedRoute,
-    private translate: TranslateService,
-    private router: Router,
+  constructor(private waxService: WaxService
     ) {
-      this.translate.setDefaultLang(this.activeLang);
     }
 
   ngOnInit() {
@@ -36,9 +27,7 @@ export class WaxmodalComponent implements OnInit {
     
   }
 
-  cambiarLenguaje() {
-    this.flag= this.flag; 
-  }
 
 }
+
 
