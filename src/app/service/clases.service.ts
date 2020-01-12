@@ -25,26 +25,26 @@ export class ClasesService {
   }
 
   getClasess() {
-    return this.http.get<Clases>(this.ServerUrl + 'api/clasess').pipe(
+    return this.http.get<Clases>(this.ServerUrl + 'api_classe/clasess').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedClasess() {
-    return this.http.get<Clases>(this.ServerUrl + 'api/featured_clasess').pipe(
+    return this.http.get<Clases>(this.ServerUrl + 'api_classe/featured_clasess').pipe(
       catchError(this.handleError)
     );
   }
 
   getClases(id: number) {
-    return this.http.get<Clases>(this.ServerUrl + 'api/clasess/' + id)
+    return this.http.get<Clases>(this.ServerUrl + 'api_classe/clasess/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentClasess() {
-    return this.http.get<Clases>(this.ServerUrl + 'api/recent_clasess').pipe(
+    return this.http.get<Clases>(this.ServerUrl + 'api_classe/recent_clasess').pipe(
       catchError(this.handleError)
     );
   }

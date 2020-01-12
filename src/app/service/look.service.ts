@@ -25,26 +25,26 @@ export class LookService {
   }
 
   getLooks() {
-    return this.http.get<Look>(this.ServerUrl + 'api/looks').pipe(
+    return this.http.get<Look>(this.ServerUrl + 'api_look/looks').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedLooks() {
-    return this.http.get<Look>(this.ServerUrl + 'api/featured_looks').pipe(
+    return this.http.get<Look>(this.ServerUrl + 'api_look/featured_looks').pipe(
       catchError(this.handleError)
     );
   }
 
   getLook(id: number) {
-    return this.http.get<Look>(this.ServerUrl + 'api/looks/' + id)
+    return this.http.get<Look>(this.ServerUrl + 'api_look/looks/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentLooks() {
-    return this.http.get<Look>(this.ServerUrl + 'api/recent_looks').pipe(
+    return this.http.get<Look>(this.ServerUrl + 'api_look/recent_looks').pipe(
       catchError(this.handleError)
     );
   }

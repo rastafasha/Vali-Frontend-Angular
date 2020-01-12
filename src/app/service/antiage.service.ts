@@ -25,26 +25,26 @@ export class AntiageService {
   }
 
   getAntiages() {
-    return this.http.get<Antiage>(this.ServerUrl + 'api/antiages').pipe(
+    return this.http.get<Antiage>(this.ServerUrl + 'api_antiages/antiages').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedAntiages() {
-    return this.http.get<Antiage>(this.ServerUrl + 'api/featured_antiages').pipe(
+    return this.http.get<Antiage>(this.ServerUrl + 'api_antiages/featured_antiages').pipe(
       catchError(this.handleError)
     );
   }
 
   getAntiage(id: number) {
-    return this.http.get<Antiage>(this.ServerUrl + 'api/antiages/' + id)
+    return this.http.get<Antiage>(this.ServerUrl + 'api_antiages/antiages/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentAntiages() {
-    return this.http.get<Antiage>(this.ServerUrl + 'api/recent_antiages').pipe(
+    return this.http.get<Antiage>(this.ServerUrl + 'api_antiages/recent_antiages').pipe(
       catchError(this.handleError)
     );
   }

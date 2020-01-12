@@ -25,26 +25,26 @@ export class HandService {
   }
 
   getHands() {
-    return this.http.get<Hand>(this.ServerUrl + 'api/hands').pipe(
+    return this.http.get<Hand>(this.ServerUrl + 'api_hand/hands').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedHands() {
-    return this.http.get<Hand>(this.ServerUrl + 'api/featured_hands').pipe(
+    return this.http.get<Hand>(this.ServerUrl + 'api_hand/featured_hands').pipe(
       catchError(this.handleError)
     );
   }
 
   getHand(id: number) {
-    return this.http.get<Hand>(this.ServerUrl + 'api/hands/' + id)
+    return this.http.get<Hand>(this.ServerUrl + 'api_hand/hands/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentHands() {
-    return this.http.get<Hand>(this.ServerUrl + 'api/recent_hands').pipe(
+    return this.http.get<Hand>(this.ServerUrl + 'api_hand/recent_hands').pipe(
       catchError(this.handleError)
     );
   }

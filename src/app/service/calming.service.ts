@@ -25,26 +25,26 @@ export class CalmingService {
   }
 
   getCalmings() {
-    return this.http.get<Calming>(this.ServerUrl + 'api/calmings').pipe(
+    return this.http.get<Calming>(this.ServerUrl + 'api_calming/calmings').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedCalmings() {
-    return this.http.get<Calming>(this.ServerUrl + 'api/featured_calmings').pipe(
+    return this.http.get<Calming>(this.ServerUrl + 'api_calming/featured_calmings').pipe(
       catchError(this.handleError)
     );
   }
 
   getCalming(id: number) {
-    return this.http.get<Calming>(this.ServerUrl + 'api/calmings/' + id)
+    return this.http.get<Calming>(this.ServerUrl + 'api_calming/calmings/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentCalmings() {
-    return this.http.get<Calming>(this.ServerUrl + 'api/recent_calmings').pipe(
+    return this.http.get<Calming>(this.ServerUrl + 'api_calming/recent_calmings').pipe(
       catchError(this.handleError)
     );
   }

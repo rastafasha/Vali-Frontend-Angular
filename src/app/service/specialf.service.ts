@@ -25,26 +25,26 @@ export class SpecialfService {
   }
 
   getSpecialfs() {
-    return this.http.get<Specialf>(this.ServerUrl + 'api/specialfs').pipe(
+    return this.http.get<Specialf>(this.ServerUrl + 'api_fspecial/specialfs').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedSpecialfs() {
-    return this.http.get<Specialf>(this.ServerUrl + 'api/featured_specialfs').pipe(
+    return this.http.get<Specialf>(this.ServerUrl + 'api_fspecial/featured_specialfs').pipe(
       catchError(this.handleError)
     );
   }
 
   getSpecialf(id: number) {
-    return this.http.get<Specialf>(this.ServerUrl + 'api/specialf/' + id)
+    return this.http.get<Specialf>(this.ServerUrl + 'api_fspecial/specialf/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentSpecialfs() {
-    return this.http.get<Specialf>(this.ServerUrl + 'api/recent_specialfs').pipe(
+    return this.http.get<Specialf>(this.ServerUrl + 'api_fspecial/recent_specialfs').pipe(
       catchError(this.handleError)
     );
   }

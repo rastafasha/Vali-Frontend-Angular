@@ -25,7 +25,7 @@ export class ContactService {
 
 
   contactForm(formdata: Contact) {
-    return this.http.post<Contact>(this.ServerUrl + 'api/contact', formdata, this.httpOptions)
+    return this.http.post<Contact>(this.ServerUrl + 'api_contact/contact', formdata, this.httpOptions)
     .pipe(
       catchError(this.handleError)
     );

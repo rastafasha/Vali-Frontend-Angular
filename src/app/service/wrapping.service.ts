@@ -25,26 +25,26 @@ export class WrappingService {
   }
 
   getWrappings() {
-    return this.http.get<Wrapping>(this.ServerUrl + 'api/wrappings').pipe(
+    return this.http.get<Wrapping>(this.ServerUrl + 'api_wrapping/wrappings').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedWrappings() {
-    return this.http.get<Wrapping>(this.ServerUrl + 'api/featured_wrappings').pipe(
+    return this.http.get<Wrapping>(this.ServerUrl + 'api_wrapping/featured_wrappings').pipe(
       catchError(this.handleError)
     );
   }
 
   getWrapping(id: number) {
-    return this.http.get<Wrapping>(this.ServerUrl + 'api/wrapping/' + id)
+    return this.http.get<Wrapping>(this.ServerUrl + 'api_wrapping/wrapping/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentWrappings() {
-    return this.http.get<Wrapping>(this.ServerUrl + 'api/recent_wrappings').pipe(
+    return this.http.get<Wrapping>(this.ServerUrl + 'api_wrapping/recent_wrappings').pipe(
       catchError(this.handleError)
     );
   }

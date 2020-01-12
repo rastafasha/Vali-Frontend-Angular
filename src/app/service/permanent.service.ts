@@ -25,26 +25,26 @@ export class PermanentService {
   }
 
   getPermanents() {
-    return this.http.get<Permanent>(this.ServerUrl + 'api/permanents').pipe(
+    return this.http.get<Permanent>(this.ServerUrl + 'api_permanent/permanents').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedPermanents() {
-    return this.http.get<Permanent>(this.ServerUrl + 'api/featured_permanents').pipe(
+    return this.http.get<Permanent>(this.ServerUrl + 'api_permanent/featured_permanents').pipe(
       catchError(this.handleError)
     );
   }
 
   getPermanent(id: number) {
-    return this.http.get<Permanent>(this.ServerUrl + 'api/permanents/' + id)
+    return this.http.get<Permanent>(this.ServerUrl + 'api_permanent/permanents/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentPermanents() {
-    return this.http.get<Permanent>(this.ServerUrl + 'api/recent_permanents').pipe(
+    return this.http.get<Permanent>(this.ServerUrl + 'api_permanent/recent_permanents').pipe(
       catchError(this.handleError)
     );
   }

@@ -25,26 +25,26 @@ export class PublicacionService {
   }
 
   getPublicacions() {
-    return this.http.get<Publicacion>(this.ServerUrl + 'api/publicacions').pipe(
+    return this.http.get<Publicacion>(this.ServerUrl + 'api_publicacion/publicacions').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedPublicacions() {
-    return this.http.get<Publicacion>(this.ServerUrl + 'api/featured_publicacions').pipe(
+    return this.http.get<Publicacion>(this.ServerUrl + 'api_publicacion/featured_publicacions').pipe(
       catchError(this.handleError)
     );
   }
 
   getPublicacion(id: number) {
-    return this.http.get<Publicacion>(this.ServerUrl + 'api/publicacions/' + id)
+    return this.http.get<Publicacion>(this.ServerUrl + 'api_publicacion/publicacions/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentPublicacions() {
-    return this.http.get<Publicacion>(this.ServerUrl + 'api/recent_publicacions').pipe(
+    return this.http.get<Publicacion>(this.ServerUrl + 'api_publicacion/recent_publicacions').pipe(
       catchError(this.handleError)
     );
   }

@@ -186,13 +186,26 @@
 }
 
 @media( max-width: 990px) {
+    .card {
+        height: auto;
+    }
     .card .card-left {
         float: left;
         padding: 0 8px 0 0;
+        width: 40%;
         widows: 100%;
     }
     .card .card-right {
         widows: 100%;
+        width: 57%;
+    }
+    .btn-block {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        height: 40px;
+        padding: 8px 0px;
+        border: 2px solid #fff;
     }
 }
 

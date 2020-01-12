@@ -25,26 +25,26 @@ export class BodyService {
   }
 
   getBodys() {
-    return this.http.get<Body>(this.ServerUrl + 'api/bodys').pipe(
+    return this.http.get<Body>(this.ServerUrl + 'api_fibrobody/bodys').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedBodys() {
-    return this.http.get<Body>(this.ServerUrl + 'api/featured_bodys').pipe(
+    return this.http.get<Body>(this.ServerUrl + 'api_fibrobody/featured_bodys').pipe(
       catchError(this.handleError)
     );
   }
 
   getBody(id: number) {
-    return this.http.get<Body>(this.ServerUrl + 'api/bodys/' + id)
+    return this.http.get<Body>(this.ServerUrl + 'api_fibrobody/bodys/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentBodys() {
-    return this.http.get<Body>(this.ServerUrl + 'api/recent_bodys').pipe(
+    return this.http.get<Body>(this.ServerUrl + 'api_fibrobody/recent_bodys').pipe(
       catchError(this.handleError)
     );
   }

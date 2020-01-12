@@ -24,26 +24,26 @@ export class WaxinfoService {
   }
 
   getWaxinfos() {
-    return this.http.get<Waxinfo>(this.ServerUrl + 'api/waxinfos').pipe(
+    return this.http.get<Waxinfo>(this.ServerUrl + 'api_wax/waxinfos').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedWaxinfos() {
-    return this.http.get<Waxinfo>(this.ServerUrl + 'api/featured_waxinfos').pipe(
+    return this.http.get<Waxinfo>(this.ServerUrl + 'api_wax/featured_waxinfos').pipe(
       catchError(this.handleError)
     );
   }
 
   getWaxinfo(id: number) {
-    return this.http.get<Waxinfo>(this.ServerUrl + 'api/waxinfos/' + id)
+    return this.http.get<Waxinfo>(this.ServerUrl + 'api_wax/waxinfos/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentWaxinfos() {
-    return this.http.get<Waxinfo>(this.ServerUrl + 'api/recent_waxinfos').pipe(
+    return this.http.get<Waxinfo>(this.ServerUrl + 'api_wax/recent_waxinfos').pipe(
       catchError(this.handleError)
     );
   }

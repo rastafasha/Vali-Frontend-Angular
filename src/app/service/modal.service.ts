@@ -25,26 +25,26 @@ export class ModalService {
   }
 
   getModals() {
-    return this.http.get<Modal>(this.ServerUrl + 'api/modals').pipe(
+    return this.http.get<Modal>(this.ServerUrl + 'api_modal/modals').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedModals() {
-    return this.http.get<Modal>(this.ServerUrl + 'api/featured_modals').pipe(
+    return this.http.get<Modal>(this.ServerUrl + 'api_modal/featured_modals').pipe(
       catchError(this.handleError)
     );
   }
 
   getModal(id: number) {
-    return this.http.get<Modal>(this.ServerUrl + 'api/modals/' + id)
+    return this.http.get<Modal>(this.ServerUrl + 'api_modal/modals/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentModals() {
-    return this.http.get<Modal>(this.ServerUrl + 'api/recent_modals').pipe(
+    return this.http.get<Modal>(this.ServerUrl + 'api_modal/recent_modals').pipe(
       catchError(this.handleError)
     );
   }

@@ -25,26 +25,26 @@ export class LuxuringService {
   }
 
   getLuxurings() {
-    return this.http.get<Luxuring>(this.ServerUrl + 'api/luxurings').pipe(
+    return this.http.get<Luxuring>(this.ServerUrl + 'api_luxuring/luxurings').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedLuxurings() {
-    return this.http.get<Luxuring>(this.ServerUrl + 'api/featured_luxurings').pipe(
+    return this.http.get<Luxuring>(this.ServerUrl + 'api_luxuring/featured_luxurings').pipe(
       catchError(this.handleError)
     );
   }
 
   getLuxuring(id: number) {
-    return this.http.get<Luxuring>(this.ServerUrl + 'api/luxurings/' + id)
+    return this.http.get<Luxuring>(this.ServerUrl + 'api_luxuring/luxurings/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentLuxurings() {
-    return this.http.get<Luxuring>(this.ServerUrl + 'api/recent_luxurings').pipe(
+    return this.http.get<Luxuring>(this.ServerUrl + 'api_luxuring/recent_luxurings').pipe(
       catchError(this.handleError)
     );
   }

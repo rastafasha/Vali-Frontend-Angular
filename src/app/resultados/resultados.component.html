@@ -7,15 +7,21 @@
                 <div class="clear"></div>
                 <br><br>
                 <div class="input-group col-xs-12">
-                    <input name="search" #input (keyup.enter)="search(input.value)" type="text" class="form-control col-xs-12" placeholder="Search and enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                    <!--input name="search" #input (keyup.enter)="search(input.value)" type="text" class="form-control col-xs-12" placeholder="Search and enter"-->
 
+                    <div class="input-group">
+                        <input name="search" #input (keyup.enter)="search(input.value)" type="text" class="form-control col-xs-12" placeholder="Search and enter">
+                        <div class="input-group-btn">
+                            <button (click)="search(input.value)" class="btn btn-default bot" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
         <div class="clear"></div><br><br>
 
-        <div *ngFor="let product of product.product | keys | paginate: { itemsPerPage: count, currentPage: p }">
+        <div class="hidden-xs" *ngFor="let product of product.product | keys | paginate: { itemsPerPage: count, currentPage: p }">
             <div class="col-sm-4">
                 <div class="card card-default">
                     <div class="card-body card-7-5 ">
@@ -25,9 +31,7 @@
                             <p>{{product.type }}</p>
                             <p>$ {{product.price }}</p>
                         </div>
-                        <div class="card-right fr-view">
-
-                            <p>{{product.description | slice:0:40 }}...</p>
+                        <div class="card-right">
                             <a data-toggle="modal" [attr.data-target]="'#' + product.popup" class="boton btn-block">
                                 <i class="fa fa-eye"></i>
                             </a>
@@ -40,7 +44,32 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="visible-xs" *ngFor="let product of product.product | keys | paginate: { itemsPerPage: count, currentPage: p }">
+            <div class="col-sm-4">
+                <div class="card card-default">
+                    <div class="card-body card-7-5 ">
+                        <div class="card-left">
+                            <img src="https://valispa.com/server/media/images/servicios/{{product.type | slice:0:-1 }}/{{product.image }}" alt="Vali Skincare & Makeup {{product.type | slice:0:-1 }}">
+
+                        </div>
+                        <div class="card-right">
+                            <h4>{{product.title }}</h4>
+                            <p>{{product.type }}</p>
+                            <p>$ {{product.price }}</p>
+                            <a data-toggle="modal" [attr.data-target]="'#' + product.popup" class="boton btn-block">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                            <!--a class="boton btn-block" style=" background-color: #2996cc; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; "
+                                href="/{{product.type | slice:0:-1 }}"> <i class="fa fa-eye"></i></a-->
+                            <a class="boton btn-block" target="_blank" style=" background-color: #2996cc; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; "
+                                href="{{product.button}}"><i class="fa fa-book"></i>Appointment</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="clear"></div> <br>
         <!--Including the pagination control.-->

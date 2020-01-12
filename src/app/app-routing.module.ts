@@ -67,7 +67,7 @@ const routes: Routes = [
   {path: 'booking-body-wrapping', component: BookingBodyWComponent},
   {path: 'booking-facial-anti-aging-treatment', component: BookingFacialAComponent},
   {path: 'booking-facial-brigthening-and-clearing-facial-peel', component: BookingFacialBComponent},
-  {path: 'booking-facial-calming-treatments', component: BookingFacialCComponent},
+  {path: 'booking-facial-calming-treatment', component: BookingFacialCComponent},
   {path: 'booking-facial-luxury-treatments', component: BookingFacialLComponent},
   {path: 'booking-facial-restorative-facial-treatments', component: BookingFacialRComponent},
   {path: 'booking-facial-special-treatments', component: BookingFacialSComponent},

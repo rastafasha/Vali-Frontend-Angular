@@ -80,7 +80,7 @@ export class ResultadosComponent implements OnInit {
       return;
     }
 
-    return this.http.get(this.ServerUrl + 'api/search?text=' + text )
+    return this.http.get(this.ServerUrl + 'api_buscador/search?text=' + text )
       .toPromise()
       .then(product=>{
         this.product= {'results': JSON.stringify(product, null),

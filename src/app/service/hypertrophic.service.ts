@@ -25,26 +25,26 @@ export class HypertrophicService {
   }
 
   getHypertrophics() {
-    return this.http.get<Hypertrophic>(this.ServerUrl + 'api/hypertrophics').pipe(
+    return this.http.get<Hypertrophic>(this.ServerUrl + 'api_fibrohypertrophic/hypertrophics').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedHypertrophics() {
-    return this.http.get<Hypertrophic>(this.ServerUrl + 'api/featured_hypertrophics').pipe(
+    return this.http.get<Hypertrophic>(this.ServerUrl + 'api_fibrohypertrophic/featured_hypertrophics').pipe(
       catchError(this.handleError)
     );
   }
 
   getHypertrophic(id: number) {
-    return this.http.get<Hypertrophic>(this.ServerUrl + 'api/hypertrophics/' + id)
+    return this.http.get<Hypertrophic>(this.ServerUrl + 'api_fibrohypertrophic/hypertrophics/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentHypertrophics() {
-    return this.http.get<Hypertrophic>(this.ServerUrl + 'api/recent_hypertrophics').pipe(
+    return this.http.get<Hypertrophic>(this.ServerUrl + 'api_fibrohypertrophic/recent_hypertrophics').pipe(
       catchError(this.handleError)
     );
   }

@@ -25,26 +25,26 @@ export class BridalService {
   }
 
   getBridals() {
-    return this.http.get<Bridal>(this.ServerUrl + 'api/bridals').pipe(
+    return this.http.get<Bridal>(this.ServerUrl + 'api_bridal/bridals').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedBridals() {
-    return this.http.get<Bridal>(this.ServerUrl + 'api/featured_bridals').pipe(
+    return this.http.get<Bridal>(this.ServerUrl + 'api_bridal/featured_bridals').pipe(
       catchError(this.handleError)
     );
   }
 
   getBridal(id: number) {
-    return this.http.get<Bridal>(this.ServerUrl + 'api/bridals/' + id)
+    return this.http.get<Bridal>(this.ServerUrl + 'api_bridal/bridals/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentBridals() {
-    return this.http.get<Bridal>(this.ServerUrl + 'api/recent_bridals').pipe(
+    return this.http.get<Bridal>(this.ServerUrl + 'api_bridal/recent_bridals').pipe(
       catchError(this.handleError)
     );
   }

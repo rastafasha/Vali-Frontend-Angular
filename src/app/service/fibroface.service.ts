@@ -25,26 +25,26 @@ export class FibrofaceService {
   }
 
   getFibrofaces() {
-    return this.http.get<Fibroface>(this.ServerUrl + 'api/fibrofaces').pipe(
+    return this.http.get<Fibroface>(this.ServerUrl + 'api_fibroface/fibrofaces').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedFibrofaces() {
-    return this.http.get<Fibroface>(this.ServerUrl + 'api/featured_fibrofaces').pipe(
+    return this.http.get<Fibroface>(this.ServerUrl + 'api_fibroface/featured_fibrofaces').pipe(
       catchError(this.handleError)
     );
   }
 
   getFibroface(id: number) {
-    return this.http.get<Fibroface>(this.ServerUrl + 'api/fibrofaces/' + id)
+    return this.http.get<Fibroface>(this.ServerUrl + 'api_fibroface/fibrofaces/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentFibrofaces() {
-    return this.http.get<Fibroface>(this.ServerUrl + 'api/recent_fibrofaces').pipe(
+    return this.http.get<Fibroface>(this.ServerUrl + 'api_fibroface/recent_fibrofaces').pipe(
       catchError(this.handleError)
     );
   }

@@ -25,26 +25,26 @@ export class RestorativeService {
   }
 
   getRestoratives() {
-    return this.http.get<Restorative>(this.ServerUrl + 'api/restoratives').pipe(
+    return this.http.get<Restorative>(this.ServerUrl + 'api_restorative/restoratives').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedRestoratives() {
-    return this.http.get<Restorative>(this.ServerUrl + 'api/featured_restoratives').pipe(
+    return this.http.get<Restorative>(this.ServerUrl + 'api_restorative/featured_restoratives').pipe(
       catchError(this.handleError)
     );
   }
 
   getRestorative(id: number) {
-    return this.http.get<Restorative>(this.ServerUrl + 'api/restorative/' + id)
+    return this.http.get<Restorative>(this.ServerUrl + 'api_restorative/restorative/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentRestoratives() {
-    return this.http.get<Restorative>(this.ServerUrl + 'api/recent_restoratives').pipe(
+    return this.http.get<Restorative>(this.ServerUrl + 'api_restorative/recent_restoratives').pipe(
       catchError(this.handleError)
     );
   }

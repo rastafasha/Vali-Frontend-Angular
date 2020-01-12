@@ -25,26 +25,26 @@ export class SpecialtService {
   }
 
   getSpecialts() {
-    return this.http.get<Specialt>(this.ServerUrl + 'api/specialts').pipe(
+    return this.http.get<Specialt>(this.ServerUrl + 'api_specialt/specialts').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedSpecialts() {
-    return this.http.get<Specialt>(this.ServerUrl + 'api/featured_specialts').pipe(
+    return this.http.get<Specialt>(this.ServerUrl + 'api_specialt/featured_specialts').pipe(
       catchError(this.handleError)
     );
   }
 
   getSpecialt(id: number) {
-    return this.http.get<Specialt>(this.ServerUrl + 'api/specialt/' + id)
+    return this.http.get<Specialt>(this.ServerUrl + 'api_specialt/specialt/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentSpecialts() {
-    return this.http.get<Specialt>(this.ServerUrl + 'api/recent_specialts').pipe(
+    return this.http.get<Specialt>(this.ServerUrl + 'api_specialt/recent_specialts').pipe(
       catchError(this.handleError)
     );
   }

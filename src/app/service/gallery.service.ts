@@ -25,26 +25,26 @@ export class GalleryService {
   }
 
   getGallerys() {
-    return this.http.get<Gallery>(this.ServerUrl + 'api/gallerys').pipe(
+    return this.http.get<Gallery>(this.ServerUrl + 'api_gallery/gallerys').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedGallerys() {
-    return this.http.get<Gallery>(this.ServerUrl + 'api/featured_gallerys').pipe(
+    return this.http.get<Gallery>(this.ServerUrl + 'api_gallery/featured_gallerys').pipe(
       catchError(this.handleError)
     );
   }
 
   getGallery(id: number) {
-    return this.http.get<Gallery>(this.ServerUrl + 'api/gallerys/' + id)
+    return this.http.get<Gallery>(this.ServerUrl + 'api_gallery/gallerys/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentGallerys() {
-    return this.http.get<Gallery>(this.ServerUrl + 'api/recent_gallerys').pipe(
+    return this.http.get<Gallery>(this.ServerUrl + 'api_gallery/recent_gallerys').pipe(
       catchError(this.handleError)
     );
   }

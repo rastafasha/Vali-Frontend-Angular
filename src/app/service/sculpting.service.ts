@@ -25,26 +25,26 @@ export class SculptingService {
   }
 
   getSculptings() {
-    return this.http.get<Sculpting>(this.ServerUrl + 'api/sculptings').pipe(
+    return this.http.get<Sculpting>(this.ServerUrl + 'api_sculpting/sculptings').pipe(
       catchError(this.handleError)
     );
   }
 
   getFeaturedSculptings() {
-    return this.http.get<Sculpting>(this.ServerUrl + 'api/featured_sculptings').pipe(
+    return this.http.get<Sculpting>(this.ServerUrl + 'api_sculpting/featured_sculptings').pipe(
       catchError(this.handleError)
     );
   }
 
   getSculpting(id: number) {
-    return this.http.get<Sculpting>(this.ServerUrl + 'api/sculpting/' + id)
+    return this.http.get<Sculpting>(this.ServerUrl + 'api_sculpting/sculpting/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
   getRecentSculptings() {
-    return this.http.get<Sculpting>(this.ServerUrl + 'api/recent_sculptings').pipe(
+    return this.http.get<Sculpting>(this.ServerUrl + 'api_sculpting/recent_sculptings').pipe(
       catchError(this.handleError)
     );
   }
