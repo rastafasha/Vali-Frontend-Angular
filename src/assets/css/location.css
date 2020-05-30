@@ -1,0 +1,11 @@
+.location h1,
+.location h2,
+.location h3,
+.location h4 {
+    color: #9e7746;
+}
+
+.location {
+    min-height: 60vh;
+    height: auto;
+}

@@ -11,6 +11,8 @@ export class SpecialsComponent implements OnInit {
 
   publicacions: Publicacion;
   error: string;
+  p: Number = 1;
+  count: Number = 6;
 
   constructor(private publicacionService: PublicacionService) {}
 
@@ -19,6 +21,7 @@ export class SpecialsComponent implements OnInit {
       (data: Publicacion) => this.publicacions = data,
       error => this.error = error
     );
+    window.scrollTo(0,0);
   }
 
 }

@@ -19,5 +19,6 @@ export class SpecialTreatmentComponent implements OnInit {
       (data: Specialt) => this.specialts = data,
       error => this.error = error
     );
+    window.scrollTo(0,0);
   }
 }

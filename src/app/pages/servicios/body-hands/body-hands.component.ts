@@ -19,6 +19,7 @@ export class BodyHandsComponent implements OnInit {
       (data: Hand) => this.hands = data,
       error => this.error = error
     );
+    
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="page-desc" [hidden]="submitted">
     <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
-        <h3> {{ 'Subscribe to our newsletters' }}</h3>
+        <h3> Subscribe to our Promo's newsletters</h3>
         <div class="input-group">
             <input type="text" name="email" id="email" [(ngModel)]="model.email" class="form-control" placeholder="E-Mail" required email #email="ngModel">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">

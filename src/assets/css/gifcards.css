@@ -1,0 +1,31 @@
+.gifcards {
+    height: auto;
+    min-height: 60vh;
+}
+
+.gifcards h1,
+.gifcards h2,
+.gifcards h3,
+.gifcards h4 {
+    color: #9e7746;
+}
+
+.gifcards .btn {
+    border: 0px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 30px 0;
+    background: #9e7746;
+    background: -moz-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    background: -webkit-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    background: linear-gradient(135deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746', GradientType=1);
+}
+
+.membership h1,
+.membership h2,
+.membership h3,
+.membership h4 {
+    color: #9e7746;
+}

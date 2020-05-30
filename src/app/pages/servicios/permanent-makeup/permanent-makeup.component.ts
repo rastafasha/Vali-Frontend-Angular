@@ -19,6 +19,7 @@ export class PermanentMakeupComponent implements OnInit {
       (data: Permanent) => this.permanents = data,
       error => this.error = error
     );
+    window.scrollTo(0,0);
   }
 
 }

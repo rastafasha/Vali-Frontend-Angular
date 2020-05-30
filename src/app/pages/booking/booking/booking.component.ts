@@ -10,6 +10,7 @@ export class BookingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo(0,0);
   }
 
 }

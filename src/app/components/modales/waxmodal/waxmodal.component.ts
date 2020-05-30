@@ -12,6 +12,7 @@ export class WaxmodalComponent implements OnInit {
   waxs: Wax;
   error: string;
   editorContent: string;
+  flag = false;
 
 
   constructor(private waxService: WaxService

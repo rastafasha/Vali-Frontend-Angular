@@ -12,6 +12,9 @@ export class GalleryComponent implements OnInit {
   gallerys: Gallery;
   error: string;
 
+  p: Number = 1;
+  count: Number = 5;
+
   constructor(private galleryService: GalleryService) {}
 
   ngOnInit() {
@@ -19,6 +22,7 @@ export class GalleryComponent implements OnInit {
       (data: Gallery) => this.gallerys = data,
       error => this.error = error
     );
+    window.scrollTo(0,0);
   }
 
 }

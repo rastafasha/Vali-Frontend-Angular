@@ -1,20 +1,25 @@
 <section class="barraseccion">
     <div class="container barraseccion6">
         <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
-            <h2> {{ 'Specials' }}</h2>
+            <h2> {{ 'Promos' }}</h2>
         </div>
     </div>
 </section>
-<section class="contact">
-    <div class="container barraseccion">
-        <div *ngFor="let publicacion of publicacions">
-            <a href="{{publicacion.image}}" data-gallery class="col-xs-6 col-sm-4">
-                <img class="pin" src="{{publicacion.image}}" alt="Vali Skincare & Makeup {{publicacion.title}}">
-            </a>
-        </div>
+<div class="container barraseccion">
+    <div *ngFor="let publicacion of publicacions | keys | paginate: { itemsPerPage: count, currentPage: p }">
+        <a href="{{publicacion.image}}" data-gallery class="col-xs-6 col-sm-4">
+            <img class="pin" src="{{publicacion.image}}" alt="Vali Skincare & Makeup {{publicacion.title}}">
+        </a>
+    </div>
+</div>
+<div class="clear"></div> <br>
+<!--Including the pagination control.-->
+<div class="container">
+    <div class="text-center">
+        <pagination-controls (pageChange)="p = $event" responsive="true"></pagination-controls>
+    </div>
+</div>
 
-    </div>
-</section>
 
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->

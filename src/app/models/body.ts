@@ -10,4 +10,6 @@ export class Body {
     is_featured: boolean;
     is_active: boolean;
     created_at: Date;
+    textFinanc: string;
+    is_activeTf: boolean;
 }

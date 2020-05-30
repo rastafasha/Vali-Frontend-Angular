@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent, GalleryComponent, SpecialsComponent,
-  WaxComponent,
-  BodyComponent, BodyHandsComponent, BodySculptingComponent, BodyWrappingComponent,
+  WaxComponent, BodyComponent, BodyHandsComponent, BodySculptingComponent, BodyWrappingComponent,
   FacialComponent, FacialAntiageComponent, FacialBrighteningComponent, FacialCalmingComponent,
   FacialLuxuryComponent, FacialSpecialComponent, FacialRestorativeComponent,
   FibroblastComponent, FibroblastHypertrophicComponent, FibroblastFaceComponent, FibroblastBodyComponent,
@@ -14,7 +13,9 @@ import { HomeComponent, GalleryComponent, SpecialsComponent,
   BookingBodyHComponent, BookingBodySComponent, BookingBodyWComponent, BookingFacialAComponent,
   BookingFacialBComponent, BookingFacialCComponent, BookingFacialLComponent, BookingFacialRComponent,
   BookingFacialSComponent, BookingFibroblastBComponent, BookingFibroblastFComponent, BookingFibroblastHComponent,
-  BookingMakeupBComponent, BookingMakeupCComponent, BookingMakeupLComponent, FinancingComponent} from './pages/index.paginas';
+  BookingMakeupBComponent, BookingMakeupCComponent, BookingMakeupLComponent,
+  FinancingComponent, NailsComponent, HairComponent, MembershipComponent, FranchiseComponent, GifcardComponent,
+  LocationComponent} from './pages/index.paginas';
 
 import { ContactFormComponent} from './cmspage/contact-form/contact-form.component';
 
@@ -50,9 +51,7 @@ const routes: Routes = [
   {path: 'makeup-classes', component: MakeupClasesComponent},
   {path: 'permanent-makeup', component: PermanentMakeupComponent},
   {path: 'special-treatments', component: SpecialTreatmentComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'specials', component: SpecialsComponent},
-  {path: 'contact', component: ContactFormComponent},
+
   // booking
   {path: 'booking', component: BookingComponent},
   {path: 'booking-body', component: BookingBodyComponent},
@@ -78,7 +77,19 @@ const routes: Routes = [
   {path: 'booking-makeup-classes', component: BookingMakeupCComponent},
   {path: 'booking-makeup-looks', component: BookingMakeupLComponent},
 
+  {path: 'hair', component: HairComponent},
+  {path: 'nails', component: NailsComponent},
+
   {path: 'financing', component: FinancingComponent},
+  {path: 'membership', component: MembershipComponent},
+  {path: 'franchise', component: FranchiseComponent},
+  {path: 'giftcard', component: GifcardComponent},
+  {path: 'gallery', component: GalleryComponent},
+  {path: 'promos', component: SpecialsComponent},
+  {path: 'contact', component: ContactFormComponent},
+  {path: 'location', component: LocationComponent},
+
+
   {path: 'buscar', component: ResultadosComponent},
   {path: 'buscar/:termino', component: ResultadosComponent},
   {path: '', redirectTo: '', pathMatch: 'full'},

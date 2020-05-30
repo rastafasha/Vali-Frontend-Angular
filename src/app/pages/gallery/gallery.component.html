@@ -8,12 +8,20 @@
 <div class="clear"></div>
 <div class="container">
     <div class="masonry">
-        <div *ngFor="let gallery of gallerys">
+        <div *ngFor="let gallery of gallerys | keys | paginate: { itemsPerPage: count, currentPage: p }">
             <div class="item ">
                 <a href="{{gallery.image}}" data-gallery>
                     <img class="pin" src="{{gallery.image}}" alt="Vali Skincare & Makeup {{gallery.title}}">
                 </a>
             </div>
+        </div>
+    </div>
+
+    <div class="clear"></div> <br>
+    <!--Including the pagination control.-->
+    <div class="container">
+        <div class="text-center">
+            <pagination-controls (pageChange)="p = $event" responsive="true"></pagination-controls>
         </div>
     </div>
 

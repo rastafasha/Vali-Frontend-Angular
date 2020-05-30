@@ -1,8 +1,15 @@
+
+
+
 // paginas
-export {HomeComponent} from '../pages/home/home.component';
-export {GalleryComponent} from '../pages/gallery/gallery.component';
-export {SpecialsComponent} from '../pages/specials/specials.component';
-export {FinancingComponent} from '../pages/financing/financing.component';
+export {HomeComponent} from './home/home.component';
+export {GalleryComponent} from './gallery/gallery.component';
+export {SpecialsComponent} from './specials/specials.component';
+export {FinancingComponent} from './financing/financing.component';
+export { MembershipComponent } from './membership/membership.component';
+export { FranchiseComponent } from './franchise/franchise.component';
+export { GifcardComponent } from './gifcard/gifcard.component';
+export { LocationComponent } from './location/location.component';
 
 // Tratamientos
 export { WaxComponent } from '../pages/servicios/wax/wax.component';
@@ -27,6 +34,8 @@ export { MakeupBridalComponent } from './servicios/makeup-bridal/makeup-bridal.c
 export { MakeupClasesComponent } from './servicios/makeup-clases/makeup-clases.component';
 export { PermanentMakeupComponent } from './servicios/permanent-makeup/permanent-makeup.component';
 export { SpecialTreatmentComponent } from './servicios/special-treatment/special-treatment.component';
+export { HairComponent } from './servicios/hair/hair.component';
+export { NailsComponent } from './servicios/nails/nails.component';
 
 // booking
 export { BookingComponent } from './booking/booking/booking.component';
@@ -53,6 +62,7 @@ export { BookingFibroblastHComponent } from './booking/booking-fibroblast-h/book
 export { BookingMakeupBComponent } from './booking/booking-makeup-b/booking-makeup-b.component';
 export { BookingMakeupCComponent } from './booking/booking-makeup-c/booking-makeup-c.component';
 export { BookingMakeupLComponent } from './booking/booking-makeup-l/booking-makeup-l.component';
+
 
 
 

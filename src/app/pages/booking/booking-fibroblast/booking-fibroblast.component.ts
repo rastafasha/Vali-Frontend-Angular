@@ -10,6 +10,7 @@ export class BookingFibroblastComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo(0,0);
   }
 
 }

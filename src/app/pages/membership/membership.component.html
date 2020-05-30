@@ -1,0 +1,35 @@
+<div *ngFor="let page of pages; ">
+
+    <section class="barraseccion first">
+        <div class="container barraseccionGalery">
+            <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
+                <h2>{{page.title}}</h2>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div><br><br>
+    <section class="membership">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6">
+                <div id="textoprincipal">
+                    <p [innerHTML]="page.description | keepHtml"></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 bord {{page.verVideo}} ">
+                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half ">
+                    <iframe class="embed-responsive-item" [src]="getVideoIframe(page.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 bord {{page.verImagen}}">
+                <img src="{{page.image}}" class="shadow " alt="Vali Skincare & Makeup {{page.title}}">
+            </div>
+
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <div id="textosegundario">
+                    <p [innerHTML]="page.description2 | keepHtml"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

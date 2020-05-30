@@ -24,6 +24,13 @@
 @import url("treatmentshome.css");
 @import url("cuadrostexto.css");
 @import url("header.css");
+
+/*--@import url("menusegundario.css");--*/
+
+@import url("financing.css");
+@import url("franchise.css");
+@import url("gifcards.css");
+@import url("location.css");
 *,
 *:after,
 *:before {
@@ -53,4 +60,33 @@
     var(--fuentefooter);
     var(--texto);
     var(--titulo);
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+    background: #9e7746;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+td,
+th {
+    padding: 10px;
+    width: 100%;
+    padding: 10px !important;
+    border: 2px solid #ccc;
+    background: #fff;
 }

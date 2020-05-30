@@ -1,0 +1,174 @@
+<header>
+    <div class="container">
+        <div class="tope hidden-xs  hidden-smmalc ">
+            <ul>
+                <!--li><a href="tel:7862926120" target="_blank"><i class="fa fa-phone"></i> &nbsp;&nbsp;(786) 292-6120</a></li-->
+                <li class="boton "><a routerLink="/booking">Booking </a></li>
+                <li class="boton"><a href="https://eikmo.myaestheticrecord.com/login" target="_blank">Login</a></li>
+                <li class="boton"> <a href="https://valispa.com/es/">Esp</a></li>
+                <!--li *ngIf="flag" class="boton" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Esp</li>
+            <li *ngIf="!flag" class="boton" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Eng</li-->
+
+            </ul>
+        </div>
+        <nav class="navbar navbar-default hidden-smmalc">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header hidden-smmalc">
+                    <a class="navbar-brand hidden-smmalc " href="/">
+                        <div class="logo">
+                            <img src="assets/img/logo.png" alt="logo Vali">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li><a routerLink="/"> {{'Home' }}</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{'Services' }}<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{'Facial' }}</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/facial-anti-aging-treatment"> {{'Anti Aging Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-restorative-facial-treatments"> {{'Restorative Facial Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-calming-treatment">  {{'Calming Facial Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel">  {{'Brightening and Clearing Facial Peel Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-special-treatments">  {{'Special Facial Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-luxury-treatments">  {{'Luxury Facials Treatments' }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a routerLink="/wax">  {{'Wax' }}</a></li>
+                                <li><a routerLink="/permanent-makeup">  {{'Permanent Makeup' }}</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{'Body' }}</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="body-hands-and-legs"> {{'Hands and Legs' }}</a></li>
+                                        <li><a routerLink="body-sculpting"> {{'Body Sculpting' }}</a></li>
+                                        <li><a routerLink="body-wrapping"> {{'Body Wrapping' }} </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">  {{'Makeup' }}</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="makeup-looks"> {{'Makeup Looks' }}</a></li>
+                                        <li><a routerLink="makeup-bridal-looks">  {{'Makeup Bridal Looks' }}</a></li>
+                                        <li><a routerLink="makeup-classes">  {{'Makeup Classes' }}</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fibroblast</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/fibroblast-face">{{'Face' }}</a></li>
+                                        <li><a routerLink="/fibroblast-body"> {{'Body' }} </a></li>
+                                        <li><a routerLink="/fibroblast-hypertrophic-atrophic-scars"> {{'fibroblasthipertropic.title' }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a routerLink="/special-treatments"> {{'Special Treatments' }}</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://valispa.square.site/" target="_self">Products</a></li>
+                        <li><a routerLink="/gallery"> {{'Gallery' }}</a></li>
+                        <li><a routerLink="/specials"> {{'Specials' }}</a></li>
+                        <li><a href="https://squareup.com/gift/WET0PGF51XB1T/order" target="_blank">{{'Gifcards' }}</a></li>
+                        <li><a routerLink="/contact">{{'Contact' }}</a></li>
+                        <li><a routerLink="/buscar"><i class="glyphicon glyphicon-search"></i></a></li>
+
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- menu movil-->
+        <div class="tope visible-xs  visible-smmalc">
+            <!--h4 style="text-align: center; font-size: 16px; color:black; display: block; padding: 0; margin: 0; padding-bottom: 3px;">
+            <a style="color:black" href="tel:7862926120" target="_blank"><i class="fa fa-phone"></i> &nbsp;&nbsp;(786) 292-6120</a>
+        </h4-->
+            <ul>
+                <li class="boton "><a routerLink="/booking">Booking </a></li>
+                <li class="boton"><a href="https://eikmo.myaestheticrecord.com/login" target="_blank">Login</a></li>
+                <li class="boton"> <a href="https://valispa.com/es/">Esp</a></li>
+                <!-----li *ngIf="flag" class="boton" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Esp</li>
+            <li *ngIf="!flag" class="boton" [ngClass]="{'active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Eng</li-->
+                <li><a routerLink="/buscar"><i class="glyphicon glyphicon-search"></i></a></li>
+            </ul>
+        </div>
+
+        <nav class="navbar  sidebarNavigation visible-xs" data-sidebarClass="navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle left-navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" routerLink="/">
+                        <div class="logo">
+                            <img src="assets/img/logo.png" alt="logo Vali">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a routerLink="/"> Home</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Facial</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/facial-anti-aging-treatment"> Anti Aging Treatments</a></li>
+                                        <li><a routerLink="/facial-restorative-facial-treatments"> Restorative Facial Treatments</a></li>
+                                        <li><a routerLink="/facial-calming-treatment"> Calming Facial Treatments </a></li>
+                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel"> Brightening and Clearing Facial Peel Treatments</a></li>
+                                        <li><a routerLink="/facial-special-treatments"> Special Facial Treatments</a></li>
+                                        <li><a routerLink="/facial-luxury-treatments"> Luxury Facials Treatments</a></li>
+                                    </ul>
+                                </li>
+                                <li><a routerLink="/wax"> Wax</a></li>
+                                <li><a routerLink="/permanent-makeup"> Permanent Makeup</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Body</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/body-hands-and-legs">Hands and Legs</a></li>
+                                        <li><a routerLink="/body-sculpting">Body Sculpting</a></li>
+                                        <li><a routerLink="/body-wrapping">Body Wrapping </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Makeup</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/makeup-looks">Makeup Looks</a></li>
+                                        <li><a routerLink="/makeup-bridal-looks"> Makeup Bridal Looks</a></li>
+                                        <li><a routerLink="/makeup-classes"> Makeup Classes</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fibroblast </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/fibroblast-face"> Face</a></li>
+                                        <li><a routerLink="/fibroblast-body">Body </a></li>
+                                        <li><a routerLink="/fibroblast-hypertrophic-atrophic-scars">Hypertrophic Atrophic Scars</a></li>
+                                    </ul>
+                                </li>
+                                <li><a routerLink="/special-treatments"> Special Treatments</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://valispa.square.site/" target="_self">Products</a></li>
+                        <li><a routerLink="/gallery">Gallery</a></li>
+                        <li><a routerLink="/specials">Specials</a></li>
+                        <li><a href="https://squareup.com/gift/WET0PGF51XB1T/order" target="_blank">Gifcards</a></li>
+                        <li><a routerLink="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

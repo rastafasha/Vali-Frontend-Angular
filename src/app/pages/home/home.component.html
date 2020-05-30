@@ -10,41 +10,53 @@
 
 <section>
     <div class="container treatments up">
-        <a href="/facial" target="_self">
+        <a routerLink="/facial">
             <div class="col-sm-6 box" style="background-image: url(./assets/img/treatment-facial.jpg);">
 
                 <h3> {{ 'Facial' }}</h3>
 
             </div>
         </a>
-        <a href="/body" target="_self">
+        <a routerLink="/body">
             <div class="col-sm-6 box">
                 <h3> {{ 'Body' }}</h3>
             </div>
         </a>
-        <a href="/wax" target="_self">
+        <a routerLink="/wax">
             <div class="col-sm-6 box" style="background-image: url(./assets/img/treatment-wax.jpg);">
                 <h3> {{ 'Wax' }}</h3>
             </div>
         </a>
-        <a href="/permanent-makeup" target="_self">
+        <a routerLink="/permanent-makeup">
             <div class="col-sm-6 box boxPer">
                 <h3> {{ 'Permanent Makeup' }}</h3>
             </div>
         </a>
+
         <div class="clear"></div>
-        <a href="/makeup" target="_self">
+        <a routerLink="/makeup">
             <div class="col-sm-12 box2">
                 <h3> {{ 'Makeup' }}</h3>
             </div>
         </a>
         <div class="clear"></div>
-        <a href="/special-treatments" target="_self">
+        <!--a routerLink="/hair">
+            <div class="col-sm-6 box" style="background-image: url(./assets/img/treatment-wax.jpg);">
+                <h3> {{ 'Hair' }}</h3>
+            </div>
+        </a>
+        <a routerLink="/nails">
+            <div class="col-sm-6 box boxPer">
+                <h3> {{ 'Nails' }}</h3>
+            </div>
+        </a-->
+        <div class="clear"></div>
+        <a routerLink="/special-treatments">
             <div class="col-sm-6 box boxSp">
                 <h3> {{ 'Special Treatments' }}</h3>
             </div>
         </a>
-        <a href="/fibroblast" target="_self">
+        <a routerLink="/fibroblast">
             <div class="col-sm-6 box" style="background-image: url(./assets/img/treatment-fibroblast.jpg);">
                 <h3> {{ 'Fibroblast' }}</h3>
             </div>
@@ -85,41 +97,6 @@
     </div>
 </section>
 
-<section class="infovalentina hidden-xs up">
-    <div class="container">
-        <div class="col-sm-8">
-            <h1 style="text-align: right">Lissette</h1>
-            <h2 style="text-align: right">Professional Esthetician And Body Contouring Licensed.</h2>
-            <p class="col-xs-12 col-sm-10 col-sm-push-2" style="text-align: right">She was born in Venezuela, which is recognized as the country of beautiful women as a product of miscegenation. She states that her interest in aesthetics comes from three places: the first, she was raised by her mother, who has more than
-                40 years of experience in the area. The second reason is that it is very satisfying to connect with her patients, establishing trust and being able to pay personal attention to the needs of their skin. Finally, she believes that investing
-                in one’s skin is a benefit that will last a lifetime.</p>
-            <div class="clear"></div>
-            <button type="button" class=" botonmodal botonmodal1" data-toggle="modal" data-target="#lissetteModal">+ info </button>
-        </div>
-        <div class="col-sm-4">
-            <img src="assets/img/lissette.png" alt="Vali Skincare & Makeup Lissette">
-        </div>
-
-    </div>
-</section>
-
-<section class="infovalentina visible-xs up">
-    <div class="container">
-        <div class="col-sm-4">
-            <img src="assets/img/lissette.png" alt="Vali Skincare & Makeup Lissette">
-        </div>
-        <div class="col-sm-8">
-            <h1>Lissette</h1>
-            <h2>Professional Esthetician And Body Contouring Licensed.</h2>
-            <p class="col-xs-12">She was born in Venezuela, which is recognized as the country of beautiful women as a product of miscegenation. She states that her interest in aesthetics comes from three places: the first, she was raised by her mother, who has more than
-                40 years of experience in the area. The second reason is that it is very satisfying to connect with her patients, establishing trust and being able to pay personal attention to the needs of their skin. Finally, she believes that investing
-                in one’s skin is a benefit that will last a lifetime.</p>
-            <div class="clear"></div>
-            <button type="button" class="botonmodal" data-toggle="modal" data-target="#lissetteModal">+ info </button>
-        </div>
-
-    </div>
-</section>
 
 <section class="barraseccion up">
     <div class="container barraseccion4">
@@ -171,8 +148,3 @@
 
 <app-bio></app-bio>
 <app-emergente></app-emergente>
-<script>
-    $(document).ready(function() {
-        $("#mostrarmodal").modal("show");
-    });
-</script>

@@ -31,11 +31,11 @@
         display: block;
     }
     .logo img {
-        width: 18%;
+        width: 16%;
         display: block;
-        margin-top: -70px;
+        margin-top: -64px;
         float: left;
-        margin-left: 40px;
+        margin-left: 0px;
     }
     .navbar-brand p {
         float: right;
@@ -44,10 +44,10 @@
     }
     .navbar {
         padding-top: 0px;
-        margin-top: 20px;
+        margin-top: -50px;
     }
     .sideMenu {
-        top: 119px;
+        top: 69px;
         max-width: 70%;
         height: 100vh;
     }

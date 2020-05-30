@@ -68,8 +68,10 @@ import { FacialSpecialComponent } from './pages/servicios/facial-special/facial-
 // Modales
 import { BannerComponent } from './components/banner/banner.component';
 import { EmergenteComponent } from './components/modales/emergente/emergente.component';
+
 import { BioComponent } from './components/modales/bio/bio.component';
 import { WaxmodalComponent } from './components/modales/waxmodal/waxmodal.component';
+
 import { FibrofacemodalComponent } from './components/modales/fibrofacemodal/fibrofacemodal.component';
 import { FacialAModalComponent } from './components/modales/facial-a-modal/facial-a-modal.component';
 import { FacialBModalComponent } from './components/modales/facial-b-modal/facial-b-modal.component';
@@ -113,6 +115,8 @@ import { BookingFibroblastFComponent } from './pages/booking/booking-fibroblast-
 import { BookingFibroblastBComponent } from './pages/booking/booking-fibroblast-b/booking-fibroblast-b.component';
 import { BookingFibroblastHComponent } from './pages/booking/booking-fibroblast-h/booking-fibroblast-h.component';
 
+
+
 // Contacto y Registro
 import { ContactFormComponent } from './cmspage/contact-form/contact-form.component';
 import { RegistrosComponent } from './cmspage/registros/registros.component';
@@ -127,6 +131,14 @@ import { KeysPipe } from './pipes/keys.pipe';
 
 // paginacion
 import {NgxPaginationModule} from 'ngx-pagination';
+import { HairComponent } from './pages/servicios/hair/hair.component';
+import { NailsComponent } from './pages/servicios/nails/nails.component';
+import { MembershipComponent } from './pages/membership/membership.component';
+import { FranchiseComponent } from './pages/franchise/franchise.component';
+import { GifcardComponent } from './pages/gifcard/gifcard.component';
+import { LocationComponent } from './pages/location/location.component';
+import { KeyValue, KeyValuePipe } from './pipes/keyvalue.pipe';
+
 
 
 @NgModule({
@@ -220,7 +232,14 @@ import {NgxPaginationModule} from 'ngx-pagination';
     FinancingComponent,
     NotFoundComponent,
     FilterPipe,
-    KeysPipe
+    KeysPipe,
+    HairComponent,
+    NailsComponent,
+    MembershipComponent,
+    FranchiseComponent,
+    GifcardComponent,
+    LocationComponent,
+    KeyValuePipe
   ],
   imports: [
     BrowserModule,

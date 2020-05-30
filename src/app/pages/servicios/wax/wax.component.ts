@@ -22,5 +22,6 @@ export class WaxComponent implements OnInit {
       (data: Wax) => this.waxs = data,
       error => this.error = error
     );
+    window.scrollTo(0,0);
   }
 }
