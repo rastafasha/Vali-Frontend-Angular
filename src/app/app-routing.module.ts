@@ -22,6 +22,7 @@ import { ContactFormComponent} from './cmspage/contact-form/contact-form.compone
 import { ResultadosComponent} from './resultados/resultados.component';
 
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -86,7 +87,7 @@ const routes: Routes = [
   {path: 'giftcard', component: GifcardComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'promos', component: SpecialsComponent},
-  {path: 'contact', component: ContactFormComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'location', component: LocationComponent},
 
 

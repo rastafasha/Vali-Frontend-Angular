@@ -1,5 +1,9 @@
 <header>
     <div class="container">
+
+        <!--==========================
+          menu desktop
+          ===================-->
         <div class="tope hidden-xs  hidden-smmalc toped">
             <ul>
                 <li><a href="tel:+17862926120" target="_blank"><i class="fa fa-phone"></i> &nbsp;&nbsp; +1 (786) 292-6120</a></li>
@@ -8,8 +12,8 @@
                 <li class="boton"><a href="https://eikmo.myaestheticrecord.com/login" target="_blank">Login</a></li>
 
                 <li class=" bandera">
-                    <a href="https://valispa.com/pruebas/es/" target="_self">
-                        <img src="assets/img/2daetapa/usaflag.jpg" alt="Vali spa ">
+                    <a href="es/" target="_self">
+                        <img src="assets/img/2daetapa/espflag.jpg" alt="Vali spa ">
                     </a>
                 </li>
                 <!--li *ngIf="flag" class="boton bandera" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')"> </li>
@@ -21,7 +25,7 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header hidden-smmalc">
-                    <a class="navbar-brand hidden-smmalc " href="/">
+                    <a class="navbar-brand hidden-smmalc " routerLink="/">
                         <div class="logo">
                             <img src="assets/img/logo.png" alt="logo Vali">
                         </div>
@@ -40,11 +44,11 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{'Facial' }}</a>
                                     <ul class="dropdown-menu">
                                         <li><a routerLink="/facial-anti-aging-treatment"> {{'Anti Aging Treatments' }}</a></li>
-                                        <li><a routerLink="/facial-restorative-facial-treatments"> {{'Restorative Facial Treatments' }}</a></li>
-                                        <li><a routerLink="/facial-calming-treatment">  {{'Calming Facial Treatments' }}</a></li>
-                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel">  {{'Brightening and Clearing Facial Peel Treatments' }}</a></li>
-                                        <li><a routerLink="/facial-special-treatments">  {{'Special Facial Treatments' }}</a></li>
-                                        <li><a routerLink="/facial-luxury-treatments">  {{'Luxury Facials Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-restorative-facial-treatments"> {{'Restorative  Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-calming-treatment">  {{'Calming  Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel">  {{'Brightening and Clearing Peel Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-special-treatments">  {{'Special Treatments' }}</a></li>
+                                        <li><a routerLink="/facial-luxury-treatments">  {{'Luxury Treatments' }}</a></li>
                                     </ul>
                                 </li>
                                 <li><a routerLink="/wax">  {{'Wax' }}</a></li>
@@ -80,40 +84,42 @@
                         </li>
                         <li><a routerLink="/financing"> {{'Financing' }}</a></li>
                         <li><a routerLink="/membership"> {{'Membership' }}</a></li>
+                        <li><a routerLink="/franchise"> {{'Franchise' }}</a></li>
                         <li><a routerLink="/gallery"> {{'Gallery' }}</a></li>
                         <li><a routerLink="/promos">Promos</a></li>
                         <li><a href="https://squareup.com/gift/WET0PGF51XB1T/order" target="_blank">Gifcards</a></li>
+                        <li><a href="https://valispa.square.site/" target="_self">Store </a></li>
                         <!--li><a routerLink="/location">{{'Locations' }}</a></li-->
                         <li><a routerLink="/contact">Contact</a></li>
                         <li><a routerLink="/buscar"><i class="fa fa-search"></i></a>
                         </li>
-
                     </ul>
-
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
         </nav>
 
-        <!-- menu movil-->
+        <!--==========================
+          menu movil
+          ===================-->
         <div class="tope visible-xs  visible-smmalc">
             <h4 style="text-align: center; font-size: 16px; color:black; display: block; text-align: end; padding: 0; margin: 0; padding-bottom: 3px; position: relative; z-index: 999;">
                 <a style="color:black" href="tel:+17862926120" target="_blank"><i class="fa fa-phone"></i> &nbsp;&nbsp; +1 (786) 292-6120</a>
             </h4>
             <ul>
                 <li class="boton ">
-                    <a href="https://valispa.square.site/" target="_self"> <i class="fa fa-shopping-bag" style="color: #fff;"></i> </a>
-                </li>
-                <li class="boton ">
-                    <a routerLink="/booking"> <i class="fa fa-calendar-o" style="color: #fff;"></i></a>
+                    <a routerLink="/booking"> Booking</a>
                 </li>
                 <li class="boton">
-                    <a href="https://eikmo.myaestheticrecord.com/login" target="_blank"> <i class="fa fa-user" style="color: #fff;"></i> </a>
+                    <a href="https://eikmo.myaestheticrecord.com/login" target="_blank"> Login </a>
                 </li>
-                <li class="boton"> <a href="https://valispa.com/pruebas/es/"><i class="fa fa-language" style="color: #fff;"></i></a></li>
-                <!-----li *ngIf="flag" class="boton" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Esp</li>
-            <li *ngIf="!flag" class="boton" [ngClass]="{'active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Eng</li-->
+                <li class=" bandera">
+                    <a href="es/" target="_self">
+                        <img src="assets/img/2daetapa/espflag.jpg" alt="Vali spa " style="height: 29px;">
+                    </a>
+                </li>
+
                 <li class="boton"><a routerLink="/buscar"><i class="fa fa-search" style="color: #fff;"></i></a></li>
             </ul>
         </div>
@@ -128,7 +134,7 @@
             </button>
                     <a class="navbar-brand" routerLink="/">
                         <div class="logo">
-                            <img src="assets/img/logo.png" alt="logo Vali">
+                            <img src="assets/img/logo.png" alt="logo Vali Skincare & Makeup">
                         </div>
                     </a>
 
@@ -143,16 +149,14 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Facial</a>
                                     <ul class="dropdown-menu">
                                         <li><a routerLink="/facial-anti-aging-treatment"> Anti Aging Treatments</a></li>
-                                        <li><a routerLink="/facial-restorative-facial-treatments"> Restorative Facial Treatments</a></li>
-                                        <li><a routerLink="/facial-calming-treatment"> Calming Facial Treatments </a></li>
-                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel"> Brightening and Clearing Facial Peel Treatments</a></li>
-                                        <li><a routerLink="/facial-special-treatments"> Special Facial Treatments</a></li>
-                                        <li><a routerLink="/facial-luxury-treatments"> Luxury Facials Treatments</a></li>
+                                        <li><a routerLink="/facial-restorative-facial-treatments"> Restorative Treatments</a></li>
+                                        <li><a routerLink="/facial-calming-treatment"> Calming Treatments </a></li>
+                                        <li><a routerLink="/facial-brigthening-and-clearing-facial-peel"> Brightening and Clearing </a></li>
+                                        <li><a routerLink="/facial-special-treatments"> Special Treatments</a></li>
+                                        <li><a routerLink="/facial-luxury-treatments"> Luxury Treatments</a></li>
                                     </ul>
                                 </li>
                                 <li><a routerLink="/wax"> Wax</a></li>
-                                <!--li><a routerLink="/hair"> Hair</a></li>
-                                <li><a routerLink="/nails"> Nails</a></li-->
                                 <li><a routerLink="/permanent-makeup"> Permanent Makeup</a></li>
                                 <li class="dropdown-submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Body</a>
@@ -181,9 +185,9 @@
                                 <li><a routerLink="/special-treatments"> Special Treatments</a></li>
                             </ul>
                         </li>
-                        <li><a routerLink="/financing"> {{'Financing' }}</a></li>
-                        <li><a routerLink="/membership"> {{'Membership' }}</a></li>
-                        <li><a routerLink="/promos"> {{'Promos' }}</a></li>
+                        <li><a routerLink="/financing"> Financing</a></li>
+                        <li><a routerLink="/membership"> Membership</a></li>
+                        <li><a routerLink="/franchise"> Franchise</a></li>
                         <li><a routerLink="/gallery">Gallery</a></li>
                         <li><a routerLink="/promos">Promos</a></li>
 
@@ -192,48 +196,15 @@
                         <li><a routerLink="/booking">Booking </a></li>
                         <li><a href="https://eikmo.myaestheticrecord.com/login" target="_blank">Login</a></li>
                         <li><a routerLink="/contact">Contact</a></li>
-                        <!--li><a routerLink="/giftcard">Gifcards</a></li-->
-                        <!--li><a routerLink="/franchise"> {{'Franchise' }}</a></li>
-                        <li><a routerLink="/location">Locations</a></li-->
-
-
+                        <li class=" bandera">
+                            <a href="es/" target="_self">
+                                <img src="assets/img/2daetapa/espflag.jpg" alt="Vali spa ">
+                            </a>
+                        </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
 
-        <!--menu segundario-->
-        <!--nav id="topNav" class="navbar navbar-default navbar-fixed-top visible-xs visible-sm">
-        <div class="container-fluid">
-            <div class="navbar-header">
-
-                <div id="mostrar-menu-secundario">
-                    <div class="toggle-vertical"></div>
-                    <ul class="menu menu-secundario">
-                        <li>
-                            <a href="#nosotros" class="page-scroll" style="cursor: pointer;"> Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="#cotizacion" class="page-scroll" style="cursor: pointer;">  Cóntactenos</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </nav-->
-
     </div>
-
-    <!---menu movil footer-->
-    <!--div class="navbarM visible-xs ">
-        <a href="#productos" class="page-scroll"><i class="fa fa-shopping-bag"></i>Store</a>
-        <a href="#productos" class="page-scroll"><i class="fa fa-user"></i>Login</a>
-        <a href="https://api.whatsapp.com/send?phone=17862926120" target="_blank"><i class="fa fa-whatsapp"></i>whatsapp</a>
-        <a class="navbar-toggle  collapsed" id="menufoo" data-toggle="collapse" data-target="#myNavbar"><i class="fa fa-bars"></i>Menu</a>
-        <a href="#top"><i class="fa fa-arrow-circle-o-up"></i>to top</a>
-
-    </div-->
 </header>

@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/3.ANTI-AGING-COLLAGEN-TREATMENT.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/3.ANTI-AGING-COLLAGEN-TREATMENT.jpg" alt=" Anti Aging Treatments Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let antiage of antiages; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + antiage.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + antiage.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + antiage.image + ')'}" title="Vali Skincare & Makeup {{antiage.title}}">
                         <div class="conten">
                             <h3>{{antiage.title}}</h3>
                             <button class="btn"> {{ 'More'  }}</button>

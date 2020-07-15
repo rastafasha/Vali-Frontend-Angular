@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/2.ONE-DAY-GROUP-MAKEUP-CLASS-4-PEOPLE.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/2.ONE-DAY-GROUP-MAKEUP-CLASS-4-PEOPLE.jpg" alt="Classes Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -26,7 +26,7 @@
         <div class="col-sm-9">
             <div *ngFor="let clases of clasess; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + clases.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + clases.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + clases.image + ')'}" title="Vali Skincare & Makeup {{clases.title}}">
                         <div class="conten">
                             <h3>{{clases.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>

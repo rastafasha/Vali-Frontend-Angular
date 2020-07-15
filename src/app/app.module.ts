@@ -138,6 +138,7 @@ import { FranchiseComponent } from './pages/franchise/franchise.component';
 import { GifcardComponent } from './pages/gifcard/gifcard.component';
 import { LocationComponent } from './pages/location/location.component';
 import { KeyValue, KeyValuePipe } from './pipes/keyvalue.pipe';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
@@ -239,7 +240,8 @@ import { KeyValue, KeyValuePipe } from './pipes/keyvalue.pipe';
     FranchiseComponent,
     GifcardComponent,
     LocationComponent,
-    KeyValuePipe
+    KeyValuePipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

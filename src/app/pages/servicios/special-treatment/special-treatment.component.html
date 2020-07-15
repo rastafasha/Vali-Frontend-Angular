@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-SPECIAL-TREATMENT.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-SPECIAL-TREATMENT.jpg" alt="Special treatments Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -21,7 +21,7 @@
     <div class="container">
         <div *ngFor="let specialt of specialts; let i=index">
             <a data-toggle="modal" [attr.data-target]="'#' + specialt.popup">
-                <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + specialt.image + ')'}">
+                <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + specialt.image + ')'}" title="Vali Skincare & Makeup {{specialt.title}}">
                     <div class="conten">
                         <h3>{{specialt.title}}</h3>
                         <button class="btn">{{ 'More'  }}</button>

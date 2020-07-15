@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   flag = false;
 
 
-  
   constructor(private router: Router, private translate: TranslateService) {
     this.translate.setDefaultLang(this.activeLang);
   }
@@ -35,8 +34,8 @@ export class HeaderComponent implements OnInit {
     this.flag = !this.flag;
   }
 
-  
 
-  
+
+
 
 }

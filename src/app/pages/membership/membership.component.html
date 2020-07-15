@@ -10,14 +10,14 @@
     <div class="clear"></div><br><br>
     <section class="membership">
         <div class="container">
-            <div class="col-xs-12 col-sm-6">
-                <div id="textoprincipal">
+            <div class="col-xs-12 col-sm-5">
+                <div id="textoprincipal" class="textoprincipal">
                     <p [innerHTML]="page.description | keepHtml"></p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 bord {{page.verVideo}} ">
-                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half ">
-                    <iframe class="embed-responsive-item" [src]="getVideoIframe(page.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-7 bord {{page.verVideo}} ">
+                <div class="membership">
+                    <iframe class="embed-responsive-item shadow" [src]="getVideoIframe(page.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 bord {{page.verImagen}}">
@@ -26,10 +26,14 @@
 
             <div class="clear"></div>
             <div class="col-xs-12">
-                <div id="textosegundario">
+                <div id="textosegundario" class="textosegundario">
                     <p [innerHTML]="page.description2 | keepHtml"></p>
                 </div>
             </div>
         </div>
     </section>
+</div>
+
+<div class="container membershipsquare">
+    <iframe src="https://squareup.com/appointments/book/mc7wroj1p5m5g/RFSCRQJSQAYNW/services" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

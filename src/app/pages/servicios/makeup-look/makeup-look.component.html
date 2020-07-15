@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-MAKEUPLook.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-MAKEUPLook.jpg" alt="Makeup Looks Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let look of looks; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + look.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + look.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + look.image + ')'}" title="Vali Skincare & Makeup {{look.title}}">
                         <div class="conten">
                             <h3>{{look.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>

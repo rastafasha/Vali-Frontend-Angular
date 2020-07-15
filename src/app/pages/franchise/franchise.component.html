@@ -10,14 +10,14 @@
     <div class="clear"></div>
     <section class="franchise">
         <div class="container">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-5">
                 <div id="textoprincipal">
                     <p [innerHTML]="page.description | keepHtml"></p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 bord {{page.verVideo}} ">
-                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half ">
-                    <iframe class="embed-responsive-item" [src]="getVideoIframe(page.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
+            <div class="col-xs-12 col-sm-7 bord {{page.verVideo}} ">
+                <div class="franchise ">
+                    <iframe class="embed-responsive-item shadow" [src]="getVideoIframe(page.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 bord {{page.verImagen}}">
@@ -32,4 +32,26 @@
         </div>
     </section>
 
+    <section class="franchise">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-6 bord {{page.verImagen}}">
+                <img src="{{page.image}}" class="shadow " alt="Vali Skincare & Makeup {{page.title}}">
+            </div>
+            <div class="clear"></div><br><br>
+            <div class="col-xs-12">
+                <div id="textosegundario">
+                    <p [innerHTML]="page.description2 | keepHtml"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
+<div class="clear"></div>
+<div class="container">
+    <div class="col-xs-12 col-sm-6 col-sm-push-3">
+        <app-contact-form></app-contact-form>
+    </div>
+</div>
+<div class="clear"></div><br><br>

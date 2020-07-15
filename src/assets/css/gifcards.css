@@ -28,4 +28,13 @@
 .membership h3,
 .membership h4 {
     color: #9e7746;
+    text-transform: none;
+}
+
+.membership ul li {
+    background: url(../img/puntos-2.png) no-repeat 0px 5px transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px 7px 23px;
+    vertical-align: middle;
 }

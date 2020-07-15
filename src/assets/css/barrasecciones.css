@@ -1,23 +1,27 @@
 @charset "UTF-8";
-/* CSS Document */
-/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
+/* CSS Document */
+
+
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
 .barraseccion {
     padding: 30px 0;
     min-height: 250px;
     height: auto;
 }
-.barraseccion  h3{
+
+.barraseccion h3 {
     color: #9e7746;
     font-size: 30px !important;
 }
-.barraseccion img{
+
+.barraseccion img {
     width: 100%;
     display: block;
 }
 
-.barraseccion h2{
+.barraseccion h2 {
     text-align: center;
     background-color: orange;
     margin-top: 40px;
@@ -26,99 +30,90 @@
     padding: 30px;
     color: #fff;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e7746+0,f3c17d+50,9e7746+100 */
-background: #9e7746; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%,#9e7746 60%, #9e7746 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%,#9e7746 60%, #9e7746 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%,#9e7746 60%, #9e7746 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #9e7746;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #9e7746 0%, #9e7746 40%, #f3c17d 50%, #9e7746 60%, #9e7746 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
-.barraseccion1{
-   background-image: url(../img/taza.png), url(../img/sal.png), url(../img/hoja1.png), url(../img/frasco.png) ;
+.barraseccion1 {
+    background-image: url(../img/taza.png), url(../img/sal.png), url(../img/hoja1.png), url(../img/frasco.png);
     background-position: right top, 18% 60%, 8% 60%, 15% 30%;
 }
 
-
-
-.barraseccion2{
-   background-image: url(../img/kiss.png), url(../img/flor.png), url(../img/hoja3.png) ;
+.barraseccion2 {
+    background-image: url(../img/kiss.png), url(../img/flor.png), url(../img/hoja3.png);
     background-position: right bottom, 15% 25%, 35% 0%;
-   
 }
 
-.barraseccion3{
-   background-image: url(../img/toalla.png), url(../img/pintura.jpg);
+.barraseccion3 {
+    background-image: url(../img/toalla.png), url(../img/pintura.jpg);
     background-position: left bottom, right bottom;
-   
 }
 
-.barraseccion4{
-   background-image:  url(../img/hoja3.png) ;
+.barraseccion4 {
+    background-image: url(../img/hoja3.png);
     background-position: 75% 0%;
-   
 }
-
-
-
 
 .barraseccion6 {
     background-image: url(../img/hoja5.png), url(../img/florSpecial.png);
     background-position: 9% top, 83% 60%;
 }
 
-
-
-
-.barraseccion .barraseccion5 h2{
-   font-size: 30px;
+.barraseccion .barraseccion5 h2 {
+    font-size: 30px;
     padding: 10px;
     width: 70%;
     float: right;
     margin-top: -60px;
     margin-bottom: 50px;
     margin-right: 15px;
-   
 }
 
-
-.barraseccion1, .barraseccion2, .barraseccion3, .barraseccion4, .barraseccion6, .barraseccionGalery, .barraseccionContact{
-     background-repeat: no-repeat;
+.barraseccion1,
+.barraseccion2,
+.barraseccion3,
+.barraseccion4,
+.barraseccion6,
+.barraseccionGalery,
+.barraseccionContact {
+    background-repeat: no-repeat;
     background-size: auto;
     min-height: 250px;
     height: auto;
 }
 
-.barraseccion5{
-   background-image:  url(../img/treatment.png) ;
+.barraseccion5 {
+    background-image: url(../img/treatment.png);
     background-position: 0% 0%;
     background-size: 15%;
     background-repeat: no-repeat;
     height: auto;
     padding: 60px 0;
-   
 }
 
-.barraseccionGalery{
-       background-image: url(../img/hojaGalery.png), url(../img/hoja4.png);
+.barraseccionGalery {
+    background-image: url(../img/hojaGalery.png), url(../img/hoja4.png);
     background-position: 13% 110%, 90% 0%;
     background-size: auto, contain;
-    
-
 }
 
-.barraseccionContact{
-       background-image: url(../img/hojaCont.png), url(../img/tazaCont.png);
-    background-position: 5% 110%, 90% 0%;
+.barraseccionContact {
+    background-image: url(../img/hojaCont.png), url(../img/tazaCont.png);
+    background-position: 5% 110%, 100% 0%;
     background-size: contain, auto;
-    
-
 }
 
-
-
-.barraseccion-hoja{
-    background-image:  url(../img/hoja.png);
-    background-position:  0% 20%;
+.barraseccion-hoja {
+    background-image: url(../img/hoja.png);
+    background-position: 0% 20%;
     background-repeat: no-repeat;
     background-size: auto;
     padding: 30px 0;
@@ -126,9 +121,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', end
     height: auto;
 }
 
-.barraseccion-sola{
-    background-image:  url(../img/elementos.png);
-    background-position:  center;
+.barraseccion-sola {
+    background-image: url(../img/elementos.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 30px 0;
@@ -137,56 +132,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', end
     margin-bottom: 30px;
 }
 
-
-
-@media(max-width:480px){
-    .barraseccion h2{
+@media(max-width:480px) {
+    .barraseccion h2 {
         font-size: 30px;
     }
-    
-    .barraseccion-hoja{
-        background-image:  none;
+    .barraseccion-hoja {
+        background-image: none;
         padding: 20px 0 0px 0;
     }
-    
-    .barraseccion{
+    .barraseccion {
         padding: 20px 0 0px 0;
     }
-    
-   
     .barraseccion3 {
-    background-image: url(../img/toalla.png), url(../img/pintura.jpg);
-    background-position: center bottom, center top;
+        background-image: url(../img/toalla.png), url(../img/pintura.jpg);
+        background-position: center bottom, center top;
         height: 410px;
-}
-    
-    .barraseccion .barraseccion5 h2{
-   font-size: 24px;
-   
-}
-    
-    .barraseccion img{
-    width: 100%;
-    float: left;
-    display: block;
-}
-    
-    
-
+    }
+    .barraseccion .barraseccion5 h2 {
+        font-size: 24px;
+    }
+    .barraseccion img {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    .barraseccion5 {
+        padding: 60px 20px;
+    }
 }
 
-@media(min-width:481px) and (max-width:780px){
-    .barraseccion h2{
+@media(min-width:481px) and (max-width:780px) {
+    .barraseccion h2 {
         font-size: 60px;
     }
-    
-    .barraseccion-hoja{
-    background-image:  none;
-}
+    .barraseccion-hoja {
+        background-image: none;
+    }
     .barraseccion3 {
-    background-image: url(../img/toalla.png), url(../img/pintura.jpg);
-     background-position: center bottom, center top;
+        background-image: url(../img/toalla.png), url(../img/pintura.jpg);
+        background-position: center bottom, center top;
         height: 490px;
-}
-
+    }
 }

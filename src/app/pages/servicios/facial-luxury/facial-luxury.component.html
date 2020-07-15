@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-luxury.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-luxury.jpg" alt="Luxury Facial Treatments Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let luxuring of luxurings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + luxuring.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + luxuring.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + luxuring.image + ')'}" title="Vali Skincare & Makeup {{luxuring.title}}">
                         <div class="conten">
                             <h3>{{luxuring.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>

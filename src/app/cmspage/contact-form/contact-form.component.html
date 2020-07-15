@@ -1,89 +1,51 @@
-<section class="barraseccion ">
-    <div class="container barraseccionContact">
-        <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3">
-            <h2> {{ 'Contact Us' }}</h2>
-        </div>
-    </div>
-</section>
-
-
-<section class="cmspage mtb-40 contact">
-    <div class="container barraseccion">
-        <h3 class="text-center"> {{ 'Send us a message if you have any question or comment.' }}</h3>
-        <div class="page-desc" [hidden]="submitted">
-            <div class="row justify-content-center">
-                <div class="col-xs-12 col-sm-6">
-                    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-                        <div class="form-group camp col-sm-6">
-                            <input type="text" name="name" id="name" [(ngModel)]="model.name" class="form-control" placeholder=" {{ 'First Name'  }}" required #name="ngModel">
-                            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
-                                <div *ngIf="name?.errors.required">
-                                    First Name is required.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group camp col-sm-6">
-                            <input type="text" name="lastname" id="lastname" [(ngModel)]="model.lastname" class="form-control" placeholder=" {{ 'Last Name'  }}" required #lastname="ngModel">
-                            <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)" class="error">
-                                <div *ngIf="lastname?.errors.required">
-                                    Last Name is required.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group camp col-sm-6">
-                            <input type="text" name="email" id="email" [(ngModel)]="model.email" class="form-control" placeholder="E-Mail" required email #email="ngModel">
-                            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
-                                <div *ngIf="email?.errors.required"> {{ 'Email is required.' }}</div>
-                                <div *ngIf="email?.errors.email"> {{ 'Email must be a valid email address.' }}</div>
-                            </div>
-                        </div>
-                        <div class="form-group camp col-sm-6">
-                            <input type="text" name="phone" id="phone" [(ngModel)]="model.phone" class="form-control" placeholder=" {{ 'Phone'  }}">
-                        </div>
-                        <div class="form-group camp2 col-xs-12">
-                            <textarea name="message" id="message" [(ngModel)]="model.message" rows="5" class="form-control" placeholder=" {{ 'Message'  }}" required #message="ngModel"></textarea>
-                            <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error">
-                                <div *ngIf="message?.errors.required">{{ 'Message is required. ' }}</div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button [disabled]="!contactForm.form.valid" class="boton col-xs-12 col-md-4 col-md-offset-4"> {{ 'Send'  }}</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h3> {{ 'We work from' }}</h3>
-                    <p>8:00 am - 6:00 pm | {{ 'Monday - Sunday' }}<br>
-                        <b> {{ 'Only by appointment.'  }}</b> <br><br>
-                        <i class="fa fa-map-marker"></i> 3061 Sw 160 Ave. Miramar FL 33027 Suite 135 <br>
-                        <i class="fa fa-phone"></i> (786) 292-6120 <br>
-                        <i class="fa fa-envelope"></i> <a href="mailto:Info@valispa.com" target="_blank">Info@valispa.com</a></p>
-
-                    <hr class="cont">
-                    <ul>
-                        <li><a href="https://www.facebook.com/valiskincare/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/Valispa_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCH0MrszHJiW-mSpm5mc7VnQ?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-                    </ul>
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="form-group camp col-xs-12 col-sm-6">
+            <input type="text" name="name" id="name" [(ngModel)]="model.name" class="form-control" placeholder=" {{ 'First Name'  }}" required #name="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+                <div *ngIf="name?.errors.required">
+                    First Name is required.
                 </div>
             </div>
         </div>
-        <div class="service-error" *ngIf="error">
-            <h3>{{error.errorTitle}}</h3>
-            <h4>{{error.errorDesc}}</h4>
-        </div>
-        <div [hidden]="!submitted" class="contact-message">
-            <div *ngIf="model.id" class="contact-success">
-                <h3 class="success"> {{ 'Success!' }}</h3>
-                <h4> {{ 'Contact form has been successfully submitted.' }}</h4>
-                <br />
-                <button (click)="gotoHome()" class="btn btn-info"> {{ 'Go to Home'  }}</button>
+        <div class="form-group camp col-xs-12 col-sm-6">
+            <input type="text" name="lastname" id="lastname" [(ngModel)]="model.lastname" class="form-control" placeholder=" {{ 'Last Name'  }}" required #lastname="ngModel">
+            <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)" class="error">
+                <div *ngIf="lastname?.errors.required">
+                    Last Name is required.
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<div class="container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.596225876063!2d-80.35983448532568!3d25.981279505818723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a40cfa4585b7%3A0xecc543e9435f670e!2s3061+SW+160th+Ave%2C+Miramar%2C+FL+33027%2C+EE.+UU.!5e0!3m2!1ses!2sve!4v1562968807184!5m2!1ses!2sve"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="form-group camp col-xs-12 col-sm-6">
+            <input type="text" name="email" id="email" [(ngModel)]="model.email" class="form-control" placeholder="E-Mail" required email #email="ngModel">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+                <div *ngIf="email?.errors.required"> {{ 'Email is required.' }}</div>
+                <div *ngIf="email?.errors.email"> {{ 'Email must be a valid email address.' }}</div>
+            </div>
+        </div>
+        <div class="form-group camp col-xs-12 col-sm-6">
+            <input type="text" name="phone" id="phone" [(ngModel)]="model.phone" class="form-control" placeholder=" {{ 'Phone'  }}">
+        </div>
+        <div class="form-group camp2 col-xs-12">
+            <textarea name="message" id="message" [(ngModel)]="model.message" rows="5" class="form-control" placeholder=" {{ 'Message'  }}" required #message="ngModel"></textarea>
+            <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error">
+                <div *ngIf="message?.errors.required">{{ 'Message is required. ' }}</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="!contactForm.form.valid" class="boton col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4"> {{ 'Send'  }}</button>
+        </div>
+    </form>
 </div>
-<div class="clear"></div><br><br>
+<div class="service-error" *ngIf="error">
+    <h1>{{error.errorTitle}}</h1>
+    <h3>{{error.errorDesc}}</h3>
+</div>
+<div [hidden]="!submitted" class="contact-message">
+    <div *ngIf="model.id" class="contact-success">
+        <h3 class="success"> {{ 'Success!' }}</h3>
+        <h4> {{ 'Contact form has been successfully submitted.' }}</h4>
+        <br />
+        <button (click)="gotoHome()" class="btn btn-info"> {{ 'Go to Home'  }}</button>
+    </div>
+</div>

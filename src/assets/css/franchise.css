@@ -4,3 +4,13 @@
 .franchise h4 {
     color: #9e7746;
 }
+
+.franchise #textoprincipal {
+    padding-top: 10px;
+}
+
+@media(max-width:768px) {
+    .franchise #textoprincipal {
+        padding-top: 0px;
+    }
+}

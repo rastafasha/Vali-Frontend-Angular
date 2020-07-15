@@ -23,6 +23,15 @@
     margin-left: 0px;
 }*/
 
+header {
+    width: 100%;
+    height: 157px;
+    background-color: var(--rosadoheader);
+    border-bottom: 1px solid var(--linea);
+    border-top: 1px solid var(--linea);
+    padding: 10px 0;
+}
+
 @media (max-width:480px) {
     .hidden-smmalc {
         display: none;
@@ -31,9 +40,9 @@
         display: block;
     }
     .logo img {
-        width: 16%;
+        width: 23%;
         display: block;
-        margin-top: -64px;
+        margin-top: -88px;
         float: left;
         margin-left: 0px;
     }
@@ -47,12 +56,16 @@
         margin-top: -50px;
     }
     .sideMenu {
-        top: 69px;
-        max-width: 70%;
+        top: 0px;
+        max-width: 90%;
         height: 100vh;
+        padding-top: 15px;
     }
     .navbar-toggle .icon-bar {
         background-color: black;
+    }
+    header {
+        height: 77px;
     }
 }
 
@@ -80,16 +93,18 @@
         margin-top: 20px;
     }
     .sideMenu {
-        top: 119px;
-        max-width: 70%;
+        top: 0px;
+        max-width: 90%;
         height: 100vh;
+        position: absolute;
+        z-index: 99999;
     }
     .navbar-toggle .icon-bar {
         background-color: black;
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
     .hidden-smmalc {
         display: block;
     }
@@ -101,41 +116,105 @@
         display: block;
         margin-top: -70px;
     }
-    .navbar-nav {
-        float: left;
-        margin: 0;
-        margin-top: -50px;
-    }
-}
-
-@media (min-width: 768px) and ( max-width:1024px) {
     .logo img {
-        width: 35%;
+        width: 25%;
         display: block;
         margin-top: -60px;
     }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) {
     .navbar a {
         font-size: 14px;
     }
+    header {
+        height: 140px;
+    }
     .navbar-nav {
-        float: left;
-        margin: 0;
-        margin-top: 0px;
+        margin-top: -20px;
+    }
+    .logo img {
+        width: 30%;
+        display: block;
+        margin-top: -60px
+    }
+    .navbar-nav {
+        margin-top: -40px;
+    }
+    header {
+        height: 114px;
     }
 }
 
-@media ( min-width:1024px) {
+@media ( min-width:1020px) {
     .navbar a {
         font-size: 16px;
     }
-    .navbar-nav {
-        float: left;
-        margin: 0;
-        margin-top: 20px;
+    .logo img {
+        width: 40%;
+        display: block;
+        margin-top: -65px;
+    }
+}
+
+@media ( max-width:1024px) {}
+
+@media only screen and ( min-width:490px) and ( max-width:736px) {
+    header {
+        height: 77px;
     }
     .logo img {
-        width: 45%;
+        width: 25%;
         display: block;
-        margin-top: -60px
+        margin-top: -80px;
+    }
+    .sidebarNavigation .left-navbar-toggle {
+        float: left;
+        margin-right: 0;
+        margin-left: -20px;
+        margin-top: -40px;
+    }
+    .parallax {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+    }
+    .parallax h1 {
+        font-size: 50px !important;
+    }
+    .infoparalax {
+        top: 50px;
+    }
+    .valentina {
+        display: flex;
+    }
+    .valentina h1 {
+        margin: 0;
+        padding: 0;
+    }
+    .page-desc {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer img {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+    }
+    .ourtext {
+        display: flex;
+    }
+    .sideMenu {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo img {
+        width: 18%;
+        display: block;
+        margin-top: -70px;
     }
 }

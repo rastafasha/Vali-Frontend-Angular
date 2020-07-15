@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-fibroblasFace.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-fibroblasFace.jpg" alt=" Fibroblast Face Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -27,7 +27,7 @@
         <div class="col-sm-9">
             <div *ngFor="let fibroface of fibrofaces; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + fibroface.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + fibroface.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + fibroface.image + ')'}" title="Vali Skincare & Makeup {{fibroface.title}}">
                         <div class="conten">
                             <h3>{{fibroface.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>
