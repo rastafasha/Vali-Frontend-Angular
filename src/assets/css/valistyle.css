@@ -5,29 +5,8 @@
 
 /* Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
-.logo img {
-    width: 45%;
-    display: block;
-    margin-top: -60px
-}
-
-@media(max-width:480px) {
-    .logo img {
-        width: 30%;
-        display: block;
-        margin: 0 auto;
-        margin-top: -80px;
-    }
-}
-
-@media(min-width:1024px) {
-    .logo img {
-        width: 40%;
-    }
-}
-
 body,
-hthml {
+html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif !important;
@@ -131,6 +110,14 @@ footer p {
 
 footer h3 {
     font-size: 18px;
+    text-align: center;
+}
+
+footer iframe {
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 23%;
 }
 
 .espacio {
@@ -156,9 +143,13 @@ footer h3 {
     .espacio {
         padding-top: 100px;
     }
+    footer iframe {
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 5%;
+    }
 }
-
-.slider {}
 
 .slider img {
     display: block;
@@ -383,8 +374,6 @@ footer h3 {
 
 /*----services---*/
 
-.serviceslist {}
-
 .serviceslist h3,
 .bodypage h3 {
     font-family: 'Lato', sans-serif !important;
@@ -605,4 +594,34 @@ hr.fibr {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:portrait) {
+    footer iframe {
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 6%;
+    }
+    .parallax {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:landscape) {
+    footer iframe {
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 18%;
+    }
+    .parallax {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 }

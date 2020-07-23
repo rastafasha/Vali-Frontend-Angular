@@ -25,7 +25,7 @@
 
 header {
     width: 100%;
-    height: 157px;
+    height: 140px;
     background-color: var(--rosadoheader);
     border-bottom: 1px solid var(--linea);
     border-top: 1px solid var(--linea);
@@ -42,7 +42,7 @@ header {
     .logo img {
         width: 23%;
         display: block;
-        margin-top: -88px;
+        margin-top: -80px;
         float: left;
         margin-left: 0px;
     }
@@ -104,7 +104,7 @@ header {
     }
 }
 
-@media (min-width:760px) {
+@media (min-width:768px) {
     .hidden-smmalc {
         display: block;
     }
@@ -123,7 +123,7 @@ header {
     }
 }
 
-@media (min-width: 761px) and ( max-width:1024px) {
+@media (min-width: 769px) and ( max-width:1024px) {
     .navbar a {
         font-size: 14px;
     }
@@ -140,6 +140,8 @@ header {
     }
     .navbar-nav {
         margin-top: -40px;
+        float: left;
+        display: grid;
     }
     header {
         height: 114px;
@@ -148,7 +150,7 @@ header {
 
 @media ( min-width:1020px) {
     .navbar a {
-        font-size: 16px;
+        font-size: 14px;
     }
     .logo img {
         width: 40%;
@@ -216,5 +218,40 @@ header {
         width: 18%;
         display: block;
         margin-top: -70px;
+    }
+}
+
+
+/*--- ipad --*/
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:portrait) {
+    .navbar a {
+        font-size: 14px;
+    }
+    .logo img {
+        width: 23%;
+        display: block;
+        margin-top: -60px
+    }
+    .navbar-nav {
+        margin-top: -70px;
+    }
+    header {
+        height: 100px;
+    }
+    .navbar-nav {
+        margin-top: -70px;
+        position: relative;
+        left: 0;
+        top: 30px;
+        display: grid;
+    }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:landscape) {
+    .logo img {
+        width: 35%;
+        display: block;
+        margin-top: -65px;
     }
 }

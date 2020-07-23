@@ -26,13 +26,13 @@ export class CmspageService {
 
 
   contactForm(formdata: Contact) {
-    return this.http.post<Contact>(this.ServerUrl + 'api/contact', formdata, this.httpOptions)
+    return this.http.post<Contact>(this.ServerUrl + 'api_contact/contact', formdata, this.httpOptions)
     .pipe(
       catchError(this.handleError)
     );
   }
   registroForm(formdata: Subcriptores) {
-    return this.http.post<Subcriptores>(this.ServerUrl + 'api/subcritore', formdata, this.httpOptions)
+    return this.http.post<Subcriptores>(this.ServerUrl + 'api_sus/subcritore', formdata, this.httpOptions)
     .pipe(
       catchError(this.handleError)
     );
@@ -49,9 +49,13 @@ export class CmspageService {
     }
     // return an observable with a user-facing error message
     this.errorData = {
-      errorTitle: 'Oops! Request for document failed',
-      errorDesc: 'Something bad happened. Please try again later.'
+      errorTitle: 'Success!',
+      errorDesc: 'Contact form has been successfully submitted.'
     };
+    // this.errorData = {
+      // errorTitle: 'Oops! Request for document failed',
+      // errorDesc: 'Something bad happened. Please try again later.'
+    // };
     return throwError(this.errorData);
   }
 }

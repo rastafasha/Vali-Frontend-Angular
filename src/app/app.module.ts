@@ -89,6 +89,7 @@ import { BodyHModalComponent } from './components/modales/body-h-modal/body-h-mo
 import { BodySModalComponent } from './components/modales/body-s-modal/body-s-modal.component';
 import { BodyWModalComponent } from './components/modales/body-w-modal/body-w-modal.component';
 import { SpecialModalComponent } from './components/modales/special-modal/special-modal.component';
+import { RegistroComponent } from './components/modales/registro/registro.component';
 
 // Booking
 import { BookingComponent } from './pages/booking/booking/booking.component';
@@ -139,6 +140,7 @@ import { GifcardComponent } from './pages/gifcard/gifcard.component';
 import { LocationComponent } from './pages/location/location.component';
 import { KeyValue, KeyValuePipe } from './pipes/keyvalue.pipe';
 import { ContactComponent } from './pages/contact/contact.component';
+
 
 
 
@@ -241,7 +243,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     GifcardComponent,
     LocationComponent,
     KeyValuePipe,
-    ContactComponent
+    ContactComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,

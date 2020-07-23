@@ -40,11 +40,12 @@ body {
 
 .sideMenu {
     left: -100%;
-    top: 52px;
+    top: 0px;
     transition: all ease-in-out .4s;
     overflow: hidden;
     width: 100%;
-    max-width: 50%
+    max-width: 50%;
+    padding-top: 20px;
 }
 
 .sideMenu.open {
@@ -54,17 +55,31 @@ body {
     background-color: #333;
     border-color: #e8a87a;
     padding-left: 15px;
+    width: 80%;
 }
 
 .sideMenu ul {
     margin: 0
 }
 
-@media only screen and ( min-width:482px) and ( max-width:736px) {
+@media ( min-width:600px) and ( max-width:780px) {
     .sidebarNavigation .left-navbar-toggle {
         float: left;
         margin-right: 0;
-        margin-left: -20px;
-        margin-top: -40px;
+        margin-left: -30px;
+        margin-top: -30px;
+        left: -20px;
+    }
+    .navbar-toggle .icon-bar {
+        display: list-item;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+    }
+    .sideMenu {
+        top: 90px;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #000;
     }
 }
