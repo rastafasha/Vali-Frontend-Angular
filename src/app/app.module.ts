@@ -252,7 +252,6 @@ import { ContactComponent } from './pages/contact/contact.component';
     ReactiveFormsModule,
     CKEditorModule,
     FormsModule,
-    HttpClientModule,
     HttpClientJsonpModule,
     NgxPaginationModule,
     TranslateModule.forRoot({
