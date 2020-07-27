@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
-import { HttpClient, HttpErrorResponse, HttpBackend, HttpClientJsonpModule  } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpBackend, HttpClientJsonpModule,   } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
@@ -32,9 +32,7 @@ export class ProductService {
   }
 
   getProducts() {
-    return this.http.get<Product>(this.ServerUrl + 'api_buscador/search?text=').pipe(
-      catchError(this.handleError)
-    );
+    return this.http.get<Product>(this.ServerUrl + 'api_buscador/search?text=');
   }
 
 
