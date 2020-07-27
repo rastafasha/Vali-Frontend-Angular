@@ -138,11 +138,6 @@ header {
         display: block;
         margin-top: -60px
     }
-    .navbar-nav {
-        margin-top: -40px;
-        float: left;
-        display: grid;
-    }
     header {
         height: 114px;
     }
@@ -253,5 +248,17 @@ header {
         width: 35%;
         display: block;
         margin-top: -65px;
+    }
+    .navbar-nav {
+        margin-top: -40px;
+        float: left;
+        display: grid;
+    }
+}
+
+@media (min-width: 990px) {
+    .navbar-nav {
+        float: right;
+        display: block;
     }
 }

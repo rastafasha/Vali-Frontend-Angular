@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
-import { HttpClient, HttpErrorResponse, HttpBackend } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpBackend, HttpClientJsonpModule  } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
 import 'rxjs/add/operator/map';
-import { Jsonp, Response } from '@angular/http';
-import {Headers} from '@angular/http';
+import {HttpHeaders} from '@angular/common/http';
 import { InfoProducto } from '../interfaces/info-producto.interface';
 import {Observable} from 'rxjs/Observable';
+
 
 
 @Injectable({
@@ -26,7 +26,7 @@ export class ProductService {
 
   times:any;
 
-  constructor(handler: HttpBackend, private jsonp: Jsonp) {
+  constructor(handler: HttpBackend, private jsonp: HttpClientJsonpModule) {
       this.http = new HttpClient(handler);
       this.times=0;
   }
@@ -41,8 +41,8 @@ export class ProductService {
 
 
 
-  private handleError(error: Response) {
-    console.error(error);
-    return Observable.throw(error.json().error || 'Server Error');
-}
+  // private handleError(error: HttpErrorResponse) {
+    // console.error(error);
+    // return Observable.throw(error.json().error || 'Server Error');
+// }
 }

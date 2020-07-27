@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HttpClientJsonpModule, HttpErrorResponse } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule, Jsonp, Response} from '@angular/http';
 
 
 
@@ -253,8 +252,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     ReactiveFormsModule,
     CKEditorModule,
     FormsModule,
-    HttpModule,
-    JsonpModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
     NgxPaginationModule,
     TranslateModule.forRoot({
       loader: {

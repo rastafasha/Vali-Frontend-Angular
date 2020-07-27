@@ -621,7 +621,7 @@ hr.fibr {
     .parallax {
         background-attachment: scroll;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+        background-size: contain;
+        height: 80vh;
     }
 }
