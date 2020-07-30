@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-fibroblastHyper.jpg" alt="Fibroblast Hypertrophic Artrophic Scars Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-fibroblastHyper.jpg" alt="Fibroblast Hypertrophic Artrophic Scars Vali Spa">
         </div>
     </div>
 </section>
@@ -29,7 +29,7 @@
         <div class="col-sm-9">
             <div *ngFor="let hypertrophic of hypertrophics; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + hypertrophic.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + hypertrophic.image + ')'}" title="Vali Skincare & Makeup {{hypertrophic.title}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + hypertrophic.image + ')'}" title="Vali Spa {{hypertrophic.title}}">
                         <div class="conten">
                             <h3>{{hypertrophic.title}}</h3>
                             <button class="btn">{{ 'More'  }} </button>

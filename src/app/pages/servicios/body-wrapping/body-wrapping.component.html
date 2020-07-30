@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class=" col-xs-12 col-sm-6 bord">
-                <img src="./assets/img/servicios/CATEGORiA-BODYWrapping.jpg" alt="Body Wrapping Vali Skincare & Makeup">
+                <img src="./assets/img/servicios/CATEGORiA-BODYWrapping.jpg" alt="Body Wrapping Vali Spa">
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let wrapping of wrappings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + wrapping.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wrapping.image + ')'}" title="Vali Skincare & Makeup {{wrapping.title}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wrapping.image + ')'}" title="Vali Spa {{wrapping.title}}">
                         <div class="conten">
                             <h3>{{wrapping.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>

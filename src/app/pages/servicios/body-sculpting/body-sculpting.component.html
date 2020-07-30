@@ -4,11 +4,11 @@
             <h2>{{ 'Body Sculpting' }} </h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>Thinking about your figure and the quickest and simplest way to see you with the dreamed molding, Vali Skincare & Makeup combines techniques to accelerate the process through cavitation, vacuum and radiofrequency.</p>
+                <p>Thinking about your figure and the quickest and simplest way to see you with the dreamed molding, Vali Spa combines techniques to accelerate the process through cavitation, vacuum and radiofrequency.</p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/5.BODY-SCULPTING-PACKAGE-TREATMENT-RF-CAVITATION-VACUUM-6-SESSIONS.jpg" alt="Body Sculpting Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/5.BODY-SCULPTING-PACKAGE-TREATMENT-RF-CAVITATION-VACUUM-6-SESSIONS.jpg" alt="Body Sculpting Vali Spa">
         </div>
     </div>
 </section>
@@ -26,7 +26,7 @@
         <div class="col-sm-9">
             <div *ngFor="let sculpting of sculptings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + sculpting.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + sculpting.image + ')'}" title="Vali Skincare & Makeup {{sculpting.title}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + sculpting.image + ')'}" title="Vali Spa {{sculpting.title}}">
                         <div class="conten">
                             <h3>{{sculpting.title}}</h3>
                             <button class="btn"> {{ 'More'  }}</button>

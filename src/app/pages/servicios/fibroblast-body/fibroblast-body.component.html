@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/5.TOMMY-TIGHTEN.jpg" alt="Fibroblast Body Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/5.TOMMY-TIGHTEN.jpg" alt="Fibroblast Body Vali Spa">
         </div>
     </div>
 </section>
@@ -26,7 +26,7 @@
         <div class="col-sm-9">
             <div *ngFor="let body of bodys; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + body.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + body.image + ')'}" title="Vali Skincare & Makeup {{body.title}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + body.image + ')'}" title="Vali Spa {{body.title}}">
                         <div class="conten">
                             <h3>{{body.title}}</h3>
                             <button class="btn">{{ 'More'  }}</button>

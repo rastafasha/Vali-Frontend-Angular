@@ -248,9 +248,18 @@ footer iframe {
     text-transform: uppercase;
 }
 
-.parallax {
+
+/*.parallax {
     background: url(../img/sliderG.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}*/
+
+.parallax {
+    background: url(../img/sliderG.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;

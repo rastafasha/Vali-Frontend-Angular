@@ -8,7 +8,7 @@
 <div class="container barraseccion">
     <div *ngFor="let publicacion of publicacions | keys | paginate: { itemsPerPage: count, currentPage: p }">
         <a href="{{publicacion.image}}" data-gallery class="col-xs-6 col-sm-4">
-            <img class="pin" src="{{publicacion.image}}" alt="Vali Skincare & Makeup {{publicacion.title}}">
+            <img class="pin" src="{{publicacion.image}}" alt="Vali Spa {{publicacion.title}}">
         </a>
     </div>
 </div>

@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-FacialTreat.jpg" alt="Restorative Facial Treatments Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-FacialTreat.jpg" alt="Restorative Facial Treatments Vali Spa">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let restorative of restoratives; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + restorative.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + restorative.image + ')'}" title="Vali Skincare & Makeup {{restorative.title}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + restorative.image + ')'}" title="Vali Spa {{restorative.title}}">
                         <div class="conten">
                             <h3>{{restorative.title}}</h3>
                             <button class="btn">{{ 'More'  }} </button>

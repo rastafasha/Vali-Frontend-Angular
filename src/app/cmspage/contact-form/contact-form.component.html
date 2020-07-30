@@ -38,10 +38,10 @@
         </div>
     </form>
 </div>
-<div class="service-error" *ngIf="error">
+<!--div class="service-error" *ngIf="error">
     <h1>{{error.errorTitle}}</h1>
     <h3>{{error.errorDesc}}</h3>
-</div>
+</div-->
 <div [hidden]="!submitted" class="contact-message">
     <div *ngIf="model.id" class="contact-success">
         <h3 class="success"> {{ 'Success!' }}</h3>
