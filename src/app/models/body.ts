@@ -6,6 +6,7 @@ export class Body {
     price: string;
     popup: string;
     button: string;
+    target: string;
     image: string;
     is_featured: boolean;
     is_active: boolean;
