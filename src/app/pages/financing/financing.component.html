@@ -14,10 +14,22 @@
             <h1>INSTALLMENTS</h1>
 
         </div>
-        <div class="col-xs-12 col-sm-7 financing">
+        <!--div class="col-xs-12 col-sm-7 financing">
             <iframe width="100%" class="shadow" src="https://www.youtube.com/embed/o4Fq2cVvhcI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; " allowfullscreen></iframe>
+        </div-->
+        <div *ngFor="let financing of financings; ">
+            <div class="col-xs-12 col-sm-7 financing {{financing.verVideo}} ">
+                <div class="membership">
+                    <iframe class="embed-responsive-item shadow" [src]="getVideoIframe(financing.video)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 bord {{financing.verImagen}}">
+                <img src="{{financing.image}}" class="shadow " alt="Vali Spa {{financing.title}}">
+            </div>
         </div>
+
         <div class="clear"></div>
+
         <br>
         <hr>
         <div class="clear"></div>
@@ -55,7 +67,7 @@
             <div data-pp-message data-pp-style-layout="flex" data-pp-style-color="black" data-pp-style-ratio="1x1">
             </div>
         </div-->
-        <a href="https://www.paypal.com/us/webapps/mpp/paypal-credit?gclid=CjwKCAjwq832BRA5EiwACvCWscW1vtVFI3NTHNeoylf0Aw6aINOgY1lfGxxbGXEWLXxY6YjOkCD3ghoCqMoQAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.paypal.com/us/webapps/mpp/paypal-credit?gclid=CjwKCAjwq832BRA5EiwACvCWscW1vtVFI3NTHNeoylf0Aw6aINOgY1lfGxxbGXEWLXxY6YjOkCD3ghoCqMoQAvD_BwE&gclsrc=aw.ds" target="_self" rel="noopener noreferrer">
             <div class="promofinancing ">
                 <img src="assets/svg/Logos-cuadros_paypalCredit.svg" alt="paypalcredit Vali Spa">
                 <ul>
@@ -63,7 +75,7 @@
                 </ul>
             </div>
         </a>
-        <a href="https://squareinstallments.com/apply/vsm " target="_blank" rel="noopener noreferrer">
+        <!--a href="https://squareinstallments.com/apply/vsm " target="_blank" rel="noopener noreferrer">
             <div class="promofinancing ">
 
                 <img src="assets/svg/Logos-cuadros_square.svg" alt="square Vali Spa">
@@ -73,7 +85,15 @@
                     <li>12 months</li>
                 </ul>
             </div>
-        </a>
+        </a-->
+        <div class="promofinancing ">
+            <img src="assets/svg/Logos-cuadros_square.svg" alt="square Vali Spa">
+            <ul>
+                <li>3 Monthly Payments</li>
+                <li>6 months</li>
+                <li>12 months</li>
+            </ul>
+        </div>
         <div class="promofinancing ">
             <img src="assets/svg/Logos-cuadros_vali.svg" alt="logo vali Vali Spa ">
             <ul>

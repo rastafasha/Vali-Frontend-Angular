@@ -40,7 +40,7 @@ header {
         display: block;
     }
     .logo img {
-        width: 23%;
+        width: 100%;
         display: block;
         margin-top: -80px;
         float: left;

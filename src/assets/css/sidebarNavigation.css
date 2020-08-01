@@ -23,7 +23,8 @@ body {
 .sideMenu,
 .sidebarNavigation {
     z-index: 999;
-    margin-bottom: 0
+    margin-bottom: 0;
+    width: 30%;
 }
 
 .overlay.open {

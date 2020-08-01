@@ -113,6 +113,9 @@ tr:first-child > td {
     padding-top: 10px;
 }
 
+
+/*-- solo video --*/
+
 .financing iframe,
 .membership iframe,
 .franchise iframe {
@@ -126,6 +129,9 @@ tr:first-child > td {
 .financing iframe {
     margin-top: -40px;
 }
+
+
+/*-- solo video --*/
 
 .bookingiframe iframe,
 .promosiframe iframe {

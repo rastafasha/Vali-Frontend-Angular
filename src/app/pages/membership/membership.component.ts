@@ -14,18 +14,21 @@ export class MembershipComponent implements OnInit {
   error: string;
 
   constructor(private pageService: PageService,
-    private _sanitizer: DomSanitizer) { }
+              // tslint:disable-next-line: variable-name
+              private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.pageService.getMembership().subscribe(
       (data: Page) => this.pages = data,
       error => this.error = error
     );
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   getVideoIframe(url) {
-    var video, results;
+    // let video, results;
+    let video: any[];
+    let results: any[];
 
     if (url === null) {
         return '';
@@ -33,7 +36,7 @@ export class MembershipComponent implements OnInit {
     results = url.match('[\\?&]v=([^&#]*)');
     video   = (results === null) ? url : results[1];
 
-    return this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);    
+    return this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);
 }
 
 
